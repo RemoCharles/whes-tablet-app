@@ -3,8 +3,6 @@ import 'package:whes_tablet_app/pages/index_site.dart';
 import 'package:whes_tablet_app/classes/styles.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:whes_tablet_app/localization/demo_localization.dart';
-import 'package:whes_tablet_app/router/custom_router.dart';
-import 'package:whes_tablet_app/router/route_constants.dart';
 import 'localization/language_constants.dart';
 
 void main() => runApp(MyApp());
