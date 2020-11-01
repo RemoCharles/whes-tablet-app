@@ -53,6 +53,7 @@ flutter:
     - lib/lang/lang_fr.json
     - lib/lang/lang_it.json
     - lib/lang/lang_en.json
+    - assets/images/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
