@@ -15,8 +15,8 @@ class IndexSite extends StatefulWidget {
 
 class _IndexSiteState extends State<IndexSite> {
   final GlobalKey<FormState> key = GlobalKey<FormState>();
-  void _changeLanguage(Language language) async {
-    Locale _locale = await setLocale(language.languageCode);
+  void _changeLanguage(Language languagecode) async {
+    Locale _locale = await setLocale(languagecode.languageCode);
     MyApp.setLocale(context, _locale);
   }
 
@@ -26,7 +26,7 @@ class _IndexSiteState extends State<IndexSite> {
       appBar: AppBar(
         title: Text(getTranslated(context, 'index_title'),
             style: Styles.textTitle),
-        actions: <Widget>[_languageButton()],
+        actions: <Widget>[],
       ),
       // body: Container(
       //     decoration: BoxDecoration(
@@ -52,6 +52,7 @@ class _IndexSiteState extends State<IndexSite> {
   Widget _drawer(String text, BuildContext context, Widget function) {
     return ListTile(
       title: Text(text, style: Styles.textLowerTitle),
+      trailing: Icon(Icons.keyboard_arrow_right),
       onTap: () {
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => function));
@@ -64,21 +65,20 @@ class _IndexSiteState extends State<IndexSite> {
       title: Text(text, style: Styles.textLowerTitle),
       childrenPadding: EdgeInsets.fromLTRB(15, 5, 5, 5),
       children: <Widget>[
-        _drawerExpansionTile("Deutsch", context, null),
-        _drawerExpansionTile("Francais", context, null),
-        _drawerExpansionTile("Italiano", context, null),
-        _drawerExpansionTile("English", context, null),
+        _drawerExpansionTile("Deutsch", context, Language("de")),
+        _drawerExpansionTile("Francais", context, Language("fr")),
+        _drawerExpansionTile("Italiano", context, Language("it")),
+        _drawerExpansionTile("English", context, Language("en")),
       ],
     );
   }
 
   Widget _drawerExpansionTile(
-      String text, BuildContext context, Widget function) {
+      String text, BuildContext context, Language language) {
     return ListTile(
       title: Text(text, style: Styles.textText),
       onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => function));
+        _changeLanguage(language);
       },
     );
   }
@@ -90,36 +90,5 @@ class _IndexSiteState extends State<IndexSite> {
             image: DecorationImage(
                 image: AssetImage("assets/images/WHES_Website_Logo.png"),
                 fit: BoxFit.scaleDown)));
-  }
-
-  Widget _languageButton() {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: DropdownButton<Language>(
-        underline: SizedBox(),
-        icon: Icon(
-          Icons.language,
-        ),
-        onChanged: (Language language) {
-          _changeLanguage(language);
-        },
-        items: Language.languageList()
-            .map<DropdownMenuItem<Language>>(
-              (e) => DropdownMenuItem<Language>(
-                value: e,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: <Widget>[
-                    Text(
-                      e.name,
-                      style: Styles.textLowerTitle,
-                    )
-                  ],
-                ),
-              ),
-            )
-            .toList(),
-      ),
-    );
   }
 }

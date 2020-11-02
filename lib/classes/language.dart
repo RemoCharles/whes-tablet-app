@@ -1,16 +1,7 @@
+import 'package:flutter/material.dart';
+
 class Language {
-  final int id;
-  final String name;
   final String languageCode;
 
-  Language(this.id, this.name, this.languageCode);
-
-  static List<Language> languageList() {
-    return <Language>[
-      Language(1, "Deutsch", "de"),
-      Language(2, "Francais", "fr"),
-      Language(3, "Italiano", "it"),
-      Language(4, "English", "en"),
-    ];
-  }
+  Language(this.languageCode);
 }
