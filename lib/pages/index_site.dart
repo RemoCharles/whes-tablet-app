@@ -35,14 +35,14 @@ class _IndexSiteState extends State<IndexSite> {
       //          fit: BoxFit.scaleDown))),
       drawer: Drawer(
         child: ListView(
-          padding: EdgeInsets.all(10),
+          padding: EdgeInsets.all(5),
           children: <Widget>[
             _drawerHeader(),
             _drawer(
                 getTranslated(context, 'UNESCO Welterbe'), context, Unesco()),
             _drawer(getTranslated(context, 'Quiz'), context, null),
             _drawer(getTranslated(context, 'Über uns'), context, AboutUs()),
-            _drawer(getTranslated(context, 'Sprache'), context, null)
+            _drawerExpansion(getTranslated(context, 'Sprache'), context)
           ],
         ),
       ),
@@ -52,6 +52,30 @@ class _IndexSiteState extends State<IndexSite> {
   Widget _drawer(String text, BuildContext context, Widget function) {
     return ListTile(
       title: Text(text, style: Styles.textLowerTitle),
+      onTap: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => function));
+      },
+    );
+  }
+
+  Widget _drawerExpansion(String text, BuildContext context) {
+    return ExpansionTile(
+      title: Text(text, style: Styles.textLowerTitle),
+      childrenPadding: EdgeInsets.fromLTRB(15, 5, 5, 5),
+      children: <Widget>[
+        _drawerExpansionTile("Deutsch", context, null),
+        _drawerExpansionTile("Francais", context, null),
+        _drawerExpansionTile("Italiano", context, null),
+        _drawerExpansionTile("English", context, null),
+      ],
+    );
+  }
+
+  Widget _drawerExpansionTile(
+      String text, BuildContext context, Widget function) {
+    return ListTile(
+      title: Text(text, style: Styles.textText),
       onTap: () {
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => function));
