@@ -10,7 +10,6 @@ class Styles {
   static const _textColorLowerTitle = Color(0xFF3C3C3B);
   static const _textColorTitle = Color(0xFFC80B0E);
   static const _textColorButtonTitle = Color(0xFFC80B0E);
-
   static const _colorIcons = Color(0xFF3C3C3B);
 
   static final textLowerTitle = TextStyle(
@@ -38,4 +37,8 @@ class Styles {
       fontWeight: FontWeight.w700);
 
   static final iconColor = IconThemeData(color: _colorIcons);
+
+  static final tileHoverColor = Color(0xFFC80B0E);
+
+  // static final blackColor = Color
 }
