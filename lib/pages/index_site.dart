@@ -4,6 +4,7 @@ import 'package:whes_tablet_app/localization/language_constants.dart';
 import 'package:whes_tablet_app/main.dart';
 import 'package:whes_tablet_app/classes/styles.dart';
 import 'package:whes_tablet_app/pages/about_us_site.dart';
+import 'package:whes_tablet_app/pages/quiz_start.dart';
 import 'package:whes_tablet_app/pages/unesco_site.dart';
 
 class IndexSite extends StatefulWidget {
@@ -40,7 +41,7 @@ class _IndexSiteState extends State<IndexSite> {
             _drawerHeader(),
             _drawer(
                 getTranslated(context, 'UNESCO Welterbe'), context, Unesco()),
-            _drawer(getTranslated(context, 'Quiz'), context, null),
+            _drawer(getTranslated(context, 'Quiz'), context, QuizStart()),
             _drawer(getTranslated(context, 'Über uns'), context, AboutUs()),
             _drawerExpansion(getTranslated(context, 'Sprache'), context)
           ],
