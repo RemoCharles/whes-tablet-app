@@ -19,6 +19,33 @@ class _UnescoState extends State<Unesco> {
         title: Text(getTranslated(context, 'unesco_title'),
             style: Styles.textTitle),
       ),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            _sectionTitle(getTranslated(context, "unesco_first_title")),
+            _sectionText(getTranslated(context, "unesco_first_text"))
+          ],
+        ),
+      ),
     );
+  }
+
+  Widget _sectionTitle(String text) {
+    return Container(
+        padding: EdgeInsets.fromLTRB(25.0, 25.0, 25.0, 10.0),
+        child: Text(text,
+            textAlign: TextAlign.left, style: Styles.textLowerTitle));
+  }
+
+  Widget _sectionText(String text) {
+    return Container(
+        padding: EdgeInsets.fromLTRB(25.0, 15.0, 25.0, 15.0),
+        child: Text(
+          text,
+          style: Styles.textText,
+          textAlign: TextAlign.left,
+        ));
   }
 }
