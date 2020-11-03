@@ -3,8 +3,13 @@
     "index_title": "UNESCO World Heritage in Switzerland",
     "about_us_title": "About us",
     "unesco_title": "UNESCO",
+    "quiz_start_title": "Quiz",
+
     "UNESCO Welterbe": "UNESCO",
     "Quiz": "Quiz",
     "Über uns": "About us",
-    "Sprache": "Language"
+    "Sprache": "Language",
+
+    "unesco_first_title": "UNESCO",
+    "unesco_first_text" : "The guiding principle of UNESCO (United Nations Educational, Scientific and Cultural Organisation) is that: \"Since wars begin in the minds of men, it is in the minds of men that the defences of peace must be constructed\". It says this in the Preamble to its Constitution. As an autonomous organisation within the UNO system, UNESCO works by supporting education, science, culture, communication and information in order to preserve peace, fight poverty and promote sustainable development and intercultural dialogue. UNESCO is a global forum for intellectual cooperation and for the sharing of information, experience and ideas."
 }

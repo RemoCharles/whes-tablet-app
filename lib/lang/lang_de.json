@@ -3,8 +3,13 @@
     "index_title": "UNESCO-Welterbe in der Schweiz",
     "about_us_title": "Über uns",
     "unesco_title": "UNESCO",
+    "quiz_start_title": "Quiz",
+
     "UNESCO Welterbe": "UNESCO",
     "Quiz": "Quiz",
     "Über uns": "Über uns",
-    "Sprache": "Sprache"
+    "Sprache": "Sprache",
+
+    "unesco_first_title": "Die UNESCO",
+    "unesco_first_text" : "Die Leitidee der UNESCO (United Nations Educational, Scientific and Cultural Organization) lautet: «Da Kriege im Denken der Menschen entstehen, muss auch der Frieden im Geiste der Menschen verankert werden». Sie steht in der Präambel ihrer Verfassung. Als Sonderorganisation innerhalb des UNO-Systems trägt die UNESCO durch Förderung der Bildung, Wissenschaft, Kultur, Kommunikation und Information zur Wahrung des Friedens, zur Bekämpfung der Armut, zu nachhaltiger Entwicklung und zum interkulturellen Dialog bei. Die UNESCO ist ein weltweites Forum für intellektuelle Zusammenarbeit und für den Austausch von Informationen, Erfahrungen und Ideen."
 }

@@ -3,8 +3,13 @@
     "index_title": "Patrimoine mondial de l'UNESCO en Suisse",
     "about_us_title": "Sur nous",
     "unesco_title": "UNESCO",
+    "quiz_start_title": "Quiz",
+
     "UNESCO Welterbe": "UNESCO",
     "Quiz": "Quiz",
     "Über uns": "Sur nous",
-    "Sprache": "Langue"
+    "Sprache": "Langue",
+
+    "unesco_first_title": "L'UNESCO",
+    "unesco_first_text" : "L’idée directrice de l’UNESCO (United Nations Educational, Scientific and Cultural Organization) est la suivante : «Puisque les guerres prenant naissance dans l’esprit des hommes, c’est dans l’esprit des hommes que doivent être élevées les défenses de la paix». C’est ce que proclame le préambule de son acte constitutif.En tant qu’organisation spéciale au sein du système de l’ONU, l’UNESCO contribue au maintien de la paix, à la lutte contre la pauvreté, au développement durable et au dialogue interculturel par la promotion de la formation, des sciences, de la culture, de la communication et de l’information. L’UNESCO est un forum mondial pour la collaboration intellectuelle et pour l’échange d’informations, d’expérience et d’idées."
 }
