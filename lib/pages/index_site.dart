@@ -66,17 +66,22 @@ class _IndexSiteState extends State<IndexSite> {
       title: Text(text, style: Styles.textLowerTitle),
       childrenPadding: EdgeInsets.fromLTRB(15, 5, 5, 5),
       children: <Widget>[
-        _drawerExpansionTile("Deutsch", context, Language("de")),
-        _drawerExpansionTile("Francais", context, Language("fr")),
-        _drawerExpansionTile("Italiano", context, Language("it")),
-        _drawerExpansionTile("English", context, Language("en")),
+        _drawerExpansionTile("assets/images/deutschland.png", "Deutsch",
+            context, Language("de")),
+        _drawerExpansionTile("assets/images/frankreich.png", "Francais",
+            context, Language("fr")),
+        _drawerExpansionTile(
+            "assets/images/italien.png", "Italiano", context, Language("it")),
+        _drawerExpansionTile(
+            "assets/images/england.png", "English", context, Language("en")),
       ],
     );
   }
 
   Widget _drawerExpansionTile(
-      String text, BuildContext context, Language language) {
+      String icon, String text, BuildContext context, Language language) {
     return ListTile(
+      leading: Image.asset(icon, width: 25, height: 25),
       title: Text(text, style: Styles.textText),
       onTap: () {
         _changeLanguage(language);
@@ -85,11 +90,13 @@ class _IndexSiteState extends State<IndexSite> {
   }
 
   Widget _drawerHeader() {
-    return DrawerHeader(
-        child: Text('', style: Styles.textLowerTitle),
-        decoration: BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage("assets/images/WHES_Website_Logo.png"),
-                fit: BoxFit.scaleDown)));
+    return Container(
+      child: DrawerHeader(
+          child: Text('', style: Styles.textLowerTitle),
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("assets/images/WHES_Website_Logo.png"),
+                  fit: BoxFit.scaleDown))),
+    );
   }
 }
