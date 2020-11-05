@@ -20,15 +20,36 @@ class _UnescoState extends State<Unesco> {
             style: Styles.textTitle),
       ),
       body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            _sectionTitle(getTranslated(context, "unesco_first_title")),
-            _sectionText(getTranslated(context, "unesco_first_text"))
-          ],
-        ),
-      ),
+          child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+              flex: 6,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  _sectionTitle(getTranslated(context, "unesco_first_title")),
+                  _sectionText(getTranslated(context, "unesco_first_text")),
+                  _sectionTitle(getTranslated(context, "unesco_second_title")),
+                  _sectionText(getTranslated(context, "unesco_second_text")),
+                  _sectionTitle(getTranslated(context, "unesco_third_title")),
+                  _sectionText(getTranslated(context, "unesco_third_text"))
+                ],
+              )),
+          Expanded(
+              flex: 4,
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    _sectionPicture("assets/images/canyon.jpg"),
+                    _sectionPicture("assets/images/reef.jpg"),
+                    _sectionPicture("assets/images/egypt.jpg"),
+                  ]))
+        ],
+      )),
     );
   }
 
@@ -45,7 +66,16 @@ class _UnescoState extends State<Unesco> {
         child: Text(
           text,
           style: Styles.textText,
-          textAlign: TextAlign.left,
+          textAlign: TextAlign.justify,
         ));
+  }
+
+  Widget _sectionPicture(String url) {
+    return Container(
+      padding: const EdgeInsets.fromLTRB(25.0, 25.0, 25.0, 5.0),
+      child: Image.asset(
+        url,
+      ),
+    );
   }
 }
