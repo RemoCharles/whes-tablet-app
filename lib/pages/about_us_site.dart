@@ -22,7 +22,10 @@ class _AboutUsState extends State<AboutUs> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.start,
-        children: [_sectionTitle("TITLE"), _sectionText("TEXT")],
+        children: [
+          _sectionTitle(getTranslated(context, "about_us_first_title")),
+          _sectionText("TEXT")
+        ],
       ),
     );
   }
