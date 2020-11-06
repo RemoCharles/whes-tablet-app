@@ -27,13 +27,19 @@ class _IndexSiteState extends State<IndexSite> {
       appBar: AppBar(
         title: Text(getTranslated(context, 'index_title'),
             style: Styles.textTitle),
-        actions: <Widget>[],
       ),
-      // body: Container(
-      //     decoration: BoxDecoration(
-      //        image: DecorationImage(
-      //            image: AssetImage("assets/images/karte_schweiz.png"),
-      //          fit: BoxFit.scaleDown))),
+      body: Container(
+        alignment: Alignment.bottomCenter,
+        width: 1300,
+        height: 800,
+        decoration: BoxDecoration(color: Colors.white),
+        child: Stack(
+          children: <Widget>[
+            Image.asset("assets/images/karte_schweiz.png"),
+            _iconBuilder("assets/images/bellinzona.png", 100, 300, AboutUs())
+          ],
+        ),
+      ),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.all(5),
@@ -98,5 +104,23 @@ class _IndexSiteState extends State<IndexSite> {
                   image: AssetImage("assets/images/WHES_Website_Logo.png"),
                   fit: BoxFit.scaleDown))),
     );
+  }
+
+  Widget _iconBuilder(
+      String url, double bottom, double right, Widget function) {
+    return Container(
+        child: Positioned(
+            bottom: bottom,
+            right: right,
+            child: GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => function));
+                },
+                child: Card(
+                    elevation: 2.0,
+                    shape: CircleBorder(),
+                    clipBehavior: Clip.antiAlias,
+                    child: Image.asset(url, width: 50, height: 50)))));
   }
 }
