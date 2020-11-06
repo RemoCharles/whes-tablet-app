@@ -29,17 +29,11 @@ class _IndexSiteState extends State<IndexSite> {
             style: Styles.textTitle),
       ),
       body: Container(
-        alignment: Alignment.bottomCenter,
-        width: 1300,
-        height: 800,
-        decoration: BoxDecoration(color: Colors.white),
-        child: Stack(
-          children: <Widget>[
-            Image.asset("assets/images/karte_schweiz.png"),
-            _iconBuilder("assets/images/bellinzona.png", 100, 300, AboutUs())
-          ],
-        ),
-      ),
+          alignment: Alignment.bottomCenter,
+          width: 1300,
+          height: 800,
+          decoration: BoxDecoration(color: Colors.white),
+          child: _iconContent()),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.all(5),
@@ -106,21 +100,76 @@ class _IndexSiteState extends State<IndexSite> {
     );
   }
 
-  Widget _iconBuilder(
-      String url, double bottom, double right, Widget function) {
+  Widget _iconContent() {
+    return Stack(children: <Widget>[
+      Image.asset("assets/images/karte_schweiz.png"),
+      _iconBuilder(
+          "assets/images/icons/bellinzona.png",
+          100,
+          300,
+          "assets/images/headers/Castelgrande2.jpg",
+          getTranslated(context, "unesco_title"),
+          "Text")
+    ]);
+  }
+
+  Widget _iconBuilder(String url, double bottom, double right, String url2,
+      String title, String text) {
     return Container(
         child: Positioned(
             bottom: bottom,
             right: right,
             child: GestureDetector(
                 onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => function));
+                  showDialog(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                          content: _popUpBuilder(url2, title, text)));
                 },
                 child: Card(
                     elevation: 2.0,
                     shape: CircleBorder(),
                     clipBehavior: Clip.antiAlias,
                     child: Image.asset(url, width: 50, height: 50)))));
+  }
+
+  Widget _popUpBuilder(String url, String title, String text) {
+    return Container(
+        width: 300,
+        height: 300,
+        child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              _popUpPicture(url),
+              _popUpTitle(title),
+              _popUpText(text),
+            ]));
+  }
+
+  Widget _popUpTitle(String text) {
+    return Container(
+        padding: EdgeInsets.fromLTRB(0.0, 25.0, 25.0, 10.0),
+        child: Text(text,
+            textAlign: TextAlign.left, style: Styles.textLowerTitle));
+  }
+
+  Widget _popUpText(String text) {
+    return Container(
+        padding: EdgeInsets.fromLTRB(0.0, 15.0, 25.0, 15.0),
+        child: Text(
+          text,
+          style: Styles.textText,
+          textAlign: TextAlign.justify,
+        ));
+  }
+
+  Widget _popUpPicture(String url) {
+    return Container(
+      padding: const EdgeInsets.all(0.0),
+      child: Image.asset(
+        url,
+      ),
+    );
   }
 }
