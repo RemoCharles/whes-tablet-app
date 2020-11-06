@@ -19,14 +19,32 @@ class _AboutUsState extends State<AboutUs> {
         title: Text(getTranslated(context, 'about_us_title'),
             style: Styles.textTitle),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      body: SingleChildScrollView(
+          child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          _sectionTitle(getTranslated(context, "about_us_first_title")),
-          _sectionText("TEXT")
+          Expanded(
+              flex: 6,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  _sectionTitle(getTranslated(context, "about_us_first_title")),
+                  _sectionText(getTranslated(context, "about_us_first_text"))
+                ],
+              )),
+          Expanded(
+              flex: 4,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  _sectionPicture("assets/images/WHES_Website_Logo.png")
+                ],
+              ))
         ],
-      ),
+      )),
     );
   }
 
@@ -40,6 +58,19 @@ class _AboutUsState extends State<AboutUs> {
   Widget _sectionText(String text) {
     return Container(
         padding: EdgeInsets.fromLTRB(25.0, 15.0, 25.0, 15.0),
-        child: Text(text, style: Styles.textText));
+        child: Text(
+          text,
+          style: Styles.textText,
+          textAlign: TextAlign.justify,
+        ));
+  }
+
+  Widget _sectionPicture(String url) {
+    return Container(
+      padding: const EdgeInsets.fromLTRB(25.0, 25.0, 25.0, 5.0),
+      child: Image.asset(
+        url,
+      ),
+    );
   }
 }
