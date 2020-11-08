@@ -6,6 +6,7 @@ import 'package:whes_tablet_app/classes/styles.dart';
 import 'package:whes_tablet_app/pages/about_us_site.dart';
 import 'package:whes_tablet_app/pages/quiz_start.dart';
 import 'package:whes_tablet_app/pages/unesco_site.dart';
+import 'package:transparent_image/transparent_image.dart';
 
 class IndexSite extends StatefulWidget {
   IndexSite({Key key}) : super(key: key);
@@ -28,12 +29,7 @@ class _IndexSiteState extends State<IndexSite> {
         title: Text(getTranslated(context, 'index_title'),
             style: Styles.textTitle),
       ),
-      body: Container(
-          alignment: Alignment.bottomCenter,
-          width: 1300,
-          height: 800,
-          decoration: BoxDecoration(color: Colors.white),
-          child: _iconContent()),
+      body: _backgroundContent(),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.all(5),
@@ -100,14 +96,102 @@ class _IndexSiteState extends State<IndexSite> {
     );
   }
 
+  Widget _backgroundContent() {
+    return Container(
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+            color: Colors.white,
+            image: DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage("assets/images/karte_schweiz.png"),
+            )),
+        child: _iconContent());
+  }
+
   Widget _iconContent() {
     return Stack(children: <Widget>[
-      Image.asset("assets/images/karte_schweiz.png"),
       _iconBuilder(
           "assets/images/icons/bellinzona.png",
-          100,
-          300,
+          55,
+          390,
           "assets/images/headers/Castelgrande2.jpg",
+          getTranslated(context, "unesco_title"),
+          "Text"),
+      _iconBuilder(
+          "assets/images/icons/albula_bernina.png",
+          210,
+          200,
+          "assets/images/headers/bahn.jpg",
+          getTranslated(context, "unesco_title"),
+          "Text"),
+      _iconBuilder(
+          "assets/images/icons/bern.png",
+          320,
+          800,
+          "assets/images/headers/bern.jpg",
+          getTranslated(context, "unesco_title"),
+          "Text"),
+      _iconBuilder(
+          "assets/images/icons/chaux_de_fonds.png",
+          380,
+          1000,
+          "assets/images/headers/la_chaux_de_fonds.jpg",
+          getTranslated(context, "unesco_title"),
+          "Text"),
+      _iconBuilder(
+          "assets/images/icons/corbusier.png",
+          170,
+          960,
+          "assets/images/headers/le_corbusier.png",
+          getTranslated(context, "unesco_title"),
+          "Text"),
+      _iconBuilder(
+          "assets/images/icons/jungfrau_aletsch.png",
+          180,
+          690,
+          "assets/images/headers/aletsch.jpg",
+          getTranslated(context, "unesco_title"),
+          "Text"),
+      _iconBuilder(
+          "assets/images/icons/lavaux.png",
+          190,
+          1020,
+          "assets/images/headers/lavaux.JPEG",
+          getTranslated(context, "unesco_title"),
+          "Text"),
+      _iconBuilder(
+          "assets/images/icons/mustair.png",
+          240,
+          55,
+          "assets/images/headers/mustair.jpg",
+          getTranslated(context, "unesco_title"),
+          "Text"),
+      _iconBuilder(
+          "assets/images/icons/pfahlbauten.png",
+          450,
+          700,
+          "assets/images/headers/pfahlbauten.jpg",
+          getTranslated(context, "unesco_title"),
+          "Text"),
+      _iconBuilder(
+          "assets/images/icons/san_giorgio.png",
+          10,
+          430,
+          "assets/images/headers/monte.jpg",
+          getTranslated(context, "unesco_title"),
+          "Text"),
+      _iconBuilder(
+          "assets/images/icons/sardona.png",
+          350,
+          370,
+          "assets/images/headers/arena.jpg",
+          getTranslated(context, "unesco_title"),
+          "Text"),
+      _iconBuilder(
+          "assets/images/icons/st_gallen.png",
+          530,
+          310,
+          "assets/images/headers/st_gallen.jpg",
           getTranslated(context, "unesco_title"),
           "Text")
     ]);
@@ -124,6 +208,7 @@ class _IndexSiteState extends State<IndexSite> {
                   showDialog(
                       context: context,
                       builder: (context) => AlertDialog(
+                          contentPadding: EdgeInsets.all(0.0),
                           content: _popUpBuilder(url2, title, text)));
                 },
                 child: Card(
@@ -149,14 +234,14 @@ class _IndexSiteState extends State<IndexSite> {
 
   Widget _popUpTitle(String text) {
     return Container(
-        padding: EdgeInsets.fromLTRB(0.0, 25.0, 25.0, 10.0),
+        padding: EdgeInsets.fromLTRB(15.0, 25.0, 25.0, 10.0),
         child: Text(text,
             textAlign: TextAlign.left, style: Styles.textLowerTitle));
   }
 
   Widget _popUpText(String text) {
     return Container(
-        padding: EdgeInsets.fromLTRB(0.0, 15.0, 25.0, 15.0),
+        padding: EdgeInsets.fromLTRB(15.0, 15.0, 25.0, 15.0),
         child: Text(
           text,
           style: Styles.textText,
@@ -166,10 +251,13 @@ class _IndexSiteState extends State<IndexSite> {
 
   Widget _popUpPicture(String url) {
     return Container(
+      width: 400,
+      height: 100,
       padding: const EdgeInsets.all(0.0),
-      child: Image.asset(
-        url,
-      ),
+      decoration: BoxDecoration(
+          image: DecorationImage(image: AssetImage(url), fit: BoxFit.cover),
+          borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(3.0), topRight: Radius.circular(3.0))),
     );
   }
 }
