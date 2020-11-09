@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:whes_tablet_app/classes/heritage.dart';
 import 'package:whes_tablet_app/classes/language.dart';
 import 'package:whes_tablet_app/localization/language_constants.dart';
 import 'package:whes_tablet_app/main.dart';
 import 'package:whes_tablet_app/classes/styles.dart';
 import 'package:whes_tablet_app/pages/about_us_site.dart';
+import 'package:whes_tablet_app/pages/heritage_detail_site.dart';
 import 'package:whes_tablet_app/pages/quiz_start.dart';
 import 'package:whes_tablet_app/pages/unesco_site.dart';
-import 'package:transparent_image/transparent_image.dart';
 
 class IndexSite extends StatefulWidget {
-  IndexSite({Key key}) : super(key: key);
+  IndexSite({Key key, this.heritages}) : super(key: key);
+  final List<Heritage> heritages;
 
   @override
   _IndexSiteState createState() => _IndexSiteState();
@@ -17,6 +19,7 @@ class IndexSite extends StatefulWidget {
 
 class _IndexSiteState extends State<IndexSite> {
   final GlobalKey<FormState> key = GlobalKey<FormState>();
+
   void _changeLanguage(Language languagecode) async {
     Locale _locale = await setLocale(languagecode.languageCode);
     MyApp.setLocale(context, _locale);
@@ -110,112 +113,49 @@ class _IndexSiteState extends State<IndexSite> {
 
   Widget _iconContent() {
     return Stack(children: <Widget>[
-      _iconBuilder(
-          "assets/images/icons/bellinzona.png",
-          55,
-          390,
-          "assets/images/headers/Castelgrande2.jpg",
-          getTranslated(context, "unesco_title"),
-          "Text"),
-      _iconBuilder(
-          "assets/images/icons/albula_bernina.png",
-          210,
-          200,
-          "assets/images/headers/bahn.jpg",
-          getTranslated(context, "unesco_title"),
-          "Text"),
-      _iconBuilder(
-          "assets/images/icons/bern.png",
-          320,
-          800,
-          "assets/images/headers/bern.jpg",
-          getTranslated(context, "unesco_title"),
-          "Text"),
-      _iconBuilder(
-          "assets/images/icons/chaux_de_fonds.png",
-          380,
-          1000,
-          "assets/images/headers/la_chaux_de_fonds.jpg",
-          getTranslated(context, "unesco_title"),
-          "Text"),
-      _iconBuilder(
-          "assets/images/icons/corbusier.png",
-          170,
-          960,
-          "assets/images/headers/le_corbusier.png",
-          getTranslated(context, "unesco_title"),
-          "Text"),
-      _iconBuilder(
-          "assets/images/icons/jungfrau_aletsch.png",
-          180,
-          690,
-          "assets/images/headers/aletsch.jpg",
-          getTranslated(context, "unesco_title"),
-          "Text"),
-      _iconBuilder(
-          "assets/images/icons/lavaux.png",
-          190,
-          1020,
-          "assets/images/headers/lavaux.JPEG",
-          getTranslated(context, "unesco_title"),
-          "Text"),
-      _iconBuilder(
-          "assets/images/icons/mustair.png",
-          240,
-          55,
-          "assets/images/headers/mustair.jpg",
-          getTranslated(context, "unesco_title"),
-          "Text"),
-      _iconBuilder(
-          "assets/images/icons/pfahlbauten.png",
-          450,
-          700,
-          "assets/images/headers/pfahlbauten.jpg",
-          getTranslated(context, "unesco_title"),
-          "Text"),
-      _iconBuilder(
-          "assets/images/icons/san_giorgio.png",
-          10,
-          430,
-          "assets/images/headers/monte.jpg",
-          getTranslated(context, "unesco_title"),
-          "Text"),
-      _iconBuilder(
-          "assets/images/icons/sardona.png",
-          350,
-          370,
-          "assets/images/headers/arena.jpg",
-          getTranslated(context, "unesco_title"),
-          "Text"),
-      _iconBuilder(
-          "assets/images/icons/st_gallen.png",
-          530,
-          310,
-          "assets/images/headers/st_gallen.jpg",
-          getTranslated(context, "unesco_title"),
-          "Text")
+      for (var heritage in widget.heritages) _iconBuilder(heritage)
     ]);
   }
 
-  Widget _iconBuilder(String url, double bottom, double right, String url2,
-      String title, String text) {
+  Widget _iconBuilder(Heritage heritage) {
     return Container(
         child: Positioned(
-            bottom: bottom,
-            right: right,
+            bottom: heritage.bottomIcon,
+            right: heritage.rightIcon,
             child: GestureDetector(
                 onTap: () {
                   showDialog(
                       context: context,
                       builder: (context) => AlertDialog(
-                          contentPadding: EdgeInsets.all(0.0),
-                          content: _popUpBuilder(url2, title, text)));
+                              actions: <Widget>[
+                                FlatButton(
+                                    child: new Text(
+                                      getTranslated(context, "button_more"),
+                                      style: Styles.textText,
+                                    ),
+                                    onPressed: () =>
+                                        _navigationToHeritageDetail(
+                                            context, heritage))
+                              ],
+                              contentPadding: EdgeInsets.all(0.0),
+                              content: _popUpBuilder(heritage.urlPopUp,
+                                  heritage.titlePopUp, heritage.textPopUp)));
                 },
-                child: Card(
-                    elevation: 2.0,
-                    shape: CircleBorder(),
-                    clipBehavior: Clip.antiAlias,
-                    child: Image.asset(url, width: 50, height: 50)))));
+                child: _iconDesign(heritage))));
+  }
+
+  Widget _iconDesign(Heritage heritage) {
+    return Container(
+        width: 50,
+        height: 50,
+        decoration: BoxDecoration(
+            border: Border.all(color: Styles.PrimaryColor),
+            shape: BoxShape.circle,
+            image: DecorationImage(
+                fit: BoxFit.fill,
+                image: AssetImage(
+                  heritage.urlIcon,
+                ))));
   }
 
   Widget _popUpBuilder(String url, String title, String text) {
@@ -227,7 +167,7 @@ class _IndexSiteState extends State<IndexSite> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               _popUpPicture(url),
-              _popUpTitle(title),
+              _popUpTitle(getTranslated(context, title)),
               _popUpText(text),
             ]));
   }
@@ -259,5 +199,13 @@ class _IndexSiteState extends State<IndexSite> {
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(3.0), topRight: Radius.circular(3.0))),
     );
+  }
+
+  void _navigationToHeritageDetail(BuildContext context, Heritage heritage) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => HeritageDetail(heritage),
+        ));
   }
 }

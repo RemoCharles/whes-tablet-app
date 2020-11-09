@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whes_tablet_app/classes/heritage_data.dart';
 import 'package:whes_tablet_app/pages/index_site.dart';
 import 'package:whes_tablet_app/classes/styles.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -8,7 +9,8 @@ import 'localization/language_constants.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key key}) : super(key: key);
+  MyApp({Key key}) : super(key: key);
+  final heritageData = HeritageData.fetchAll();
   static void setLocale(BuildContext context, Locale newLocale) {
     _MyAppState state = context.findAncestorStateOfType<_MyAppState>();
     state.setLocale(newLocale);
@@ -75,7 +77,7 @@ class _MyAppState extends State<MyApp> {
           }
           return supportedLocales.first;
         },
-        home: IndexSite(),
+        home: IndexSite(heritages: widget.heritageData),
       );
     }
   }
