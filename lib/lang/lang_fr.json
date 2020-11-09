@@ -18,5 +18,20 @@
     "unesco_third_text" : "Les réserves de biosphère sont des régions modèles dans lesquelles les principes du développement durable sont vécus au quotidien. Dans ces régions, les habitants et les entreprises s’efforcent d’accorder harmonieusement la responsabilité écologique, la performance économique et la solidarité sociale. Un développement durable répond aux besoins actuels, tout en assurant que les besoins des générations futures pourront également être satisfaits. En Suisse, il existe deux réserves de biosphère : le parc national du Val Müstair, dans le canton des Grisons, et l’Entlebuch, dans le canton de Lucerne. \n\nUn engagement pour l’humanité tout entière : nous tous sommes appelés à veiller à ce précieux patrimoine et à assurer sa transmission aux générations futures – l’UNESCO nous aide dans ce sens.",
 
     "about_us_first_title" : "World Heritage Experience Switzerland - WHES",
-    "about_us_first_text" : "Depuis plus de 10 ans, l'association World Heritage Experience Switzerland (WHES) promeut les intérêts de ses membres dans le domaine du Patrimoine mondial de l'UNESCO en Suisse. \n\nCe qui a été mis en place d'abord dans le domaine du tourisme s'est étendu ces dernières années aux domaines de la médiation et de la gestion. Dans ce but, nous nous engageons vers une approche holistique du Patrimoine mondial. Suivant la devise \"On ne protège bien que ce que l'on connait bien\", nous essayons de réduire les conflits entre la protection et l'exploitation. Les différents acteurs de l'association sont mis en réseau par le biais de WHES et bénéficient de synergies communes. \n\nWHES promeut et coordonne des expériences uniques et de grande qualité. Celles-ci contribuent au développement durable des valeurs universelles et de l’exploitation (touristique) sur place. \n\nWHES est également engagée dans une coopération à long terme avec les associations européennes du Patrimoine mondial et promeut cet échange transnational. \nL'association est financée par les cotisations des membres et des partenaires ainsi que par les contributions de la Confédération et des cantons sous la forme d'un projet temporaire dans le cadre de la nouvelle politique régionale (NPR)."
+    "about_us_first_text" : "Depuis plus de 10 ans, l'association World Heritage Experience Switzerland (WHES) promeut les intérêts de ses membres dans le domaine du Patrimoine mondial de l'UNESCO en Suisse. \n\nCe qui a été mis en place d'abord dans le domaine du tourisme s'est étendu ces dernières années aux domaines de la médiation et de la gestion. Dans ce but, nous nous engageons vers une approche holistique du Patrimoine mondial. Suivant la devise \"On ne protège bien que ce que l'on connait bien\", nous essayons de réduire les conflits entre la protection et l'exploitation. Les différents acteurs de l'association sont mis en réseau par le biais de WHES et bénéficient de synergies communes. \n\nWHES promeut et coordonne des expériences uniques et de grande qualité. Celles-ci contribuent au développement durable des valeurs universelles et de l’exploitation (touristique) sur place. \n\nWHES est également engagée dans une coopération à long terme avec les associations européennes du Patrimoine mondial et promeut cet échange transnational. \nL'association est financée par les cotisations des membres et des partenaires ainsi que par les contributions de la Confédération et des cantons sous la forme d'un projet temporaire dans le cadre de la nouvelle politique régionale (NPR).",
+
+    "title_bellinzona" : "Trois Châteaux de Bellinzone",
+    "title_alpen" : "Swiss Alps Jungfrau-Aletsch",
+    "title_arena" : "Haut lieu tectonique suisse Sardona",
+    "title_bahn" : "Chemin de fer rhétique dans les paysages de l’Albula et de la Bernina",
+    "title_chaux": "La Chaux-de-Fonds / Le Locle, urbanisme horloger",
+    "title_lavaux" : "Lavaux, vignoble en terrasses",
+    "title_corbusier" : "L’Œuvre architecturale de Le Corbusier",
+    "title_monte" : "Monte San Giorgio",
+    "title_mustair" : "Couvent bénédictin Saint-Jean à Müstair",
+    "title_pfahlbauten" : "Sites palafittiques préhistoriques autour des Alpes",
+    "title_gallen" : "Domaine conventuel de Saint-Gall",
+    "title_bern" : "Vieille ville de Berne",
+
+    "button_more" : "Plus"
 }
