@@ -29,6 +29,7 @@ class _IndexSiteState extends State<IndexSite> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: <Widget>[_dropDownButton()],
         title: Text(getTranslated(context, 'index_title'),
             style: Styles.textTitle),
       ),
@@ -49,6 +50,42 @@ class _IndexSiteState extends State<IndexSite> {
     );
   }
 
+  Widget _dropDownButton() {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: DropdownButton<Language>(
+        underline: SizedBox(),
+        icon: Icon(
+          Icons.language,
+          color: Styles.iconColor,
+        ),
+        onChanged: (Language language) {
+          _changeLanguage(language);
+        },
+        items: Language.languageList()
+            .map<DropdownMenuItem<Language>>(
+              (e) => DropdownMenuItem<Language>(
+                value: e,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Image.asset(e.flag, width: 25, height: 25),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(15, 5, 5, 5),
+                      child: Text(
+                        e.name,
+                        style: Styles.textText,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            )
+            .toList(),
+      ),
+    );
+  }
+
   Widget _drawer(String text, BuildContext context, Widget function) {
     return ListTile(
       title: Text(text, style: Styles.textLowerTitle),
@@ -65,23 +102,16 @@ class _IndexSiteState extends State<IndexSite> {
       title: Text(text, style: Styles.textLowerTitle),
       childrenPadding: EdgeInsets.fromLTRB(15, 5, 5, 5),
       children: <Widget>[
-        _drawerExpansionTile("assets/images/deutschland.png", "Deutsch",
-            context, Language("de")),
-        _drawerExpansionTile("assets/images/frankreich.png", "Francais",
-            context, Language("fr")),
-        _drawerExpansionTile(
-            "assets/images/italien.png", "Italiano", context, Language("it")),
-        _drawerExpansionTile(
-            "assets/images/england.png", "English", context, Language("en")),
+        for (var language in Language.languageList())
+          _drawerExpansionTile(language)
       ],
     );
   }
 
-  Widget _drawerExpansionTile(
-      String icon, String text, BuildContext context, Language language) {
+  Widget _drawerExpansionTile(Language language) {
     return ListTile(
-      leading: Image.asset(icon, width: 25, height: 25),
-      title: Text(text, style: Styles.textText),
+      leading: Image.asset(language.flag, width: 25, height: 25),
+      title: Text(language.name, style: Styles.textText),
       onTap: () {
         _changeLanguage(language);
       },
@@ -127,19 +157,10 @@ class _IndexSiteState extends State<IndexSite> {
                   showDialog(
                       context: context,
                       builder: (context) => AlertDialog(
-                              actions: <Widget>[
-                                FlatButton(
-                                    child: new Text(
-                                      getTranslated(context, "button_more"),
-                                      style: Styles.textText,
-                                    ),
-                                    onPressed: () =>
-                                        _navigationToHeritageDetail(
-                                            context, heritage))
-                              ],
-                              contentPadding: EdgeInsets.all(0.0),
-                              content: _popUpBuilder(heritage.urlPopUp,
-                                  heritage.titlePopUp, heritage.textPopUp)));
+                          actions: _popUpButton(heritage),
+                          contentPadding: EdgeInsets.zero,
+                          content: _popUpBuilder(heritage.urlPopUp,
+                              heritage.titlePopUp, heritage.textPopUp)));
                 },
                 child: _iconDesign(heritage))));
   }
@@ -160,28 +181,28 @@ class _IndexSiteState extends State<IndexSite> {
 
   Widget _popUpBuilder(String url, String title, String text) {
     return Container(
-        width: 300,
-        height: 300,
+        width: 400,
+        height: 260,
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               _popUpPicture(url),
               _popUpTitle(getTranslated(context, title)),
-              _popUpText(text),
+              _popUpText(getTranslated(context, text)),
             ]));
   }
 
   Widget _popUpTitle(String text) {
     return Container(
-        padding: EdgeInsets.fromLTRB(15.0, 25.0, 25.0, 10.0),
+        padding: EdgeInsets.fromLTRB(15.0, 15.0, 25.0, 0.0),
         child: Text(text,
-            textAlign: TextAlign.left, style: Styles.textLowerTitle));
+            textAlign: TextAlign.start, style: Styles.textPopUpTitle));
   }
 
   Widget _popUpText(String text) {
     return Container(
-        padding: EdgeInsets.fromLTRB(15.0, 15.0, 25.0, 15.0),
+        padding: EdgeInsets.fromLTRB(15.0, 15.0, 25.0, 0.0),
         child: Text(
           text,
           style: Styles.textText,
@@ -192,13 +213,31 @@ class _IndexSiteState extends State<IndexSite> {
   Widget _popUpPicture(String url) {
     return Container(
       width: 400,
-      height: 100,
+      height: 150,
       padding: const EdgeInsets.all(0.0),
       decoration: BoxDecoration(
           image: DecorationImage(image: AssetImage(url), fit: BoxFit.cover),
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(3.0), topRight: Radius.circular(3.0))),
     );
+  }
+
+  List<Widget> _popUpButton(Heritage heritage) {
+    return <Widget>[
+      FlatButton(
+        child: new Text(
+          getTranslated(context, "button_cancel"),
+          style: Styles.textButton,
+        ),
+        onPressed: () => Navigator.of(context).pop(),
+      ),
+      FlatButton(
+          child: new Text(
+            getTranslated(context, "button_more"),
+            style: Styles.textButton,
+          ),
+          onPressed: () => _navigationToHeritageDetail(context, heritage))
+    ];
   }
 
   void _navigationToHeritageDetail(BuildContext context, Heritage heritage) {
