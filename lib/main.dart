@@ -52,7 +52,7 @@ class _MyAppState extends State<MyApp> {
         debugShowCheckedModeBanner: false,
         title: "WHES TABLET APP",
         theme: ThemeData(
-            iconTheme: Styles.iconColor,
+            iconTheme: Styles.iconThemeColor,
             primaryColor: Styles.PrimaryColor,
             visualDensity: VisualDensity.adaptivePlatformDensity),
         locale: _locale,

@@ -5,12 +5,20 @@ class Styles {
   static const _textSizeTitle = 30.0;
   static const _textSizeLowerTitle = 25.0;
   static const _textSizeText = 20.0;
-  static const _textSizeButtonTitle = 25.0;
+  static const _textSizeButtonTitle = 18.0;
+  static const _textSizePopUpTitle = 23.0;
   static const _textColorText = Color(0xFF3C3C3B);
   static const _textColorLowerTitle = Color(0xFF3C3C3B);
   static const _textColorTitle = Color(0xFFC80B0E);
   static const _textColorButtonTitle = Color(0xFFC80B0E);
   static const _colorIcons = Color(0xFF3C3C3B);
+
+  static final textPopUpTitle = TextStyle(
+      fontSize: _textSizePopUpTitle,
+      color: _textColorLowerTitle,
+      fontFamily: 'helvetica',
+      fontWeight: FontWeight.w700,
+      height: 0.8);
 
   static final textLowerTitle = TextStyle(
       fontSize: _textSizeLowerTitle,
@@ -34,11 +42,11 @@ class Styles {
       fontSize: _textSizeButtonTitle,
       color: _textColorButtonTitle,
       fontFamily: 'helvetica',
-      fontWeight: FontWeight.w700);
+      fontWeight: FontWeight.w300);
 
-  static final iconColor = IconThemeData(color: _colorIcons);
+  static final iconThemeColor = IconThemeData(color: _colorIcons);
+
+  static final iconColor = Color(0xFF3C3C3B);
 
   static final tileHoverColor = Color(0xFFC80B0E);
-
-  // static final blackColor = Color
 }
