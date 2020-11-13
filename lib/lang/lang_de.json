@@ -33,5 +33,19 @@
     "title_gallen" : "Stiftsbezirk St.Gallen",
     "title_bern" : "Altstadt von Bern",
 
-    "button_more" : "Mehr"
+    "since_bellinzona" : "Weltkulturerbe seit 2000",
+    "since_alpen" : "Weltnaturerbe seit 2001",
+    "since_arena" : "Weltnaturerbe seit 2008",
+    "since_bahn" : "Weltkulturerbe seit 2008",
+    "since_chaux" : "Weltkulturerbe seit 2009",
+    "since_lavaux" : "Weltkulturerbe seit 2007",
+    "since_corbusier" : "Weltkulturerbe seit 2016",
+    "since_monte" : "Weltnaturerbe seit 2003",
+    "since_mustair" : "Welkulturerbe seit 1983",
+    "since_pfahlbauten" : "Weltkulturerbe seit 2011",
+    "since_gallen" : "Weltkulturerbe seit 1983",
+    "since_bern" : "Weltkulturerbe seit 1983",
+
+    "button_more" : "MEHR",
+    "button_cancel" : "ZURÜCK"
 } 

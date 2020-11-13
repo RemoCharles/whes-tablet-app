@@ -9,7 +9,7 @@ class HeritageData extends Heritage {
         rightIcon: 390,
         urlIcon: "assets/images/icons/bellinzona.png",
         titlePopUp: "title_bellinzona",
-        textPopUp: "Text",
+        textPopUp: "since_bellinzona",
         urlPopUp: "assets/images/headers/Castelgrande2.jpg"),
     Heritage(
         titleDetail: "title_bahn",
@@ -18,7 +18,7 @@ class HeritageData extends Heritage {
         rightIcon: 200,
         urlIcon: "assets/images/icons/albula_bernina.png",
         titlePopUp: "title_bahn",
-        textPopUp: "Text",
+        textPopUp: "since_bahn",
         urlPopUp: "assets/images/headers/bahn.jpg"),
     Heritage(
         titleDetail: "title_bern",
@@ -27,7 +27,7 @@ class HeritageData extends Heritage {
         rightIcon: 800,
         urlIcon: "assets/images/icons/bern.png",
         titlePopUp: "title_bern",
-        textPopUp: "Text",
+        textPopUp: "since_bern",
         urlPopUp: "assets/images/headers/bern.jpg"),
     Heritage(
         titleDetail: "title_chaux",
@@ -36,7 +36,7 @@ class HeritageData extends Heritage {
         rightIcon: 1000,
         urlIcon: "assets/images/icons/chaux_de_fonds.png",
         titlePopUp: "title_chaux",
-        textPopUp: "Text",
+        textPopUp: "since_chaux",
         urlPopUp: "assets/images/headers/la_chaux_de_fonds.jpg"),
     Heritage(
         titleDetail: "title_corbusier",
@@ -45,7 +45,7 @@ class HeritageData extends Heritage {
         rightIcon: 960,
         urlIcon: "assets/images/icons/corbusier.png",
         titlePopUp: "title_corbusier",
-        textPopUp: "Text",
+        textPopUp: "since_corbusier",
         urlPopUp: "assets/images/headers/le_corbusier.png"),
     Heritage(
         titleDetail: "title_alpen",
@@ -54,7 +54,7 @@ class HeritageData extends Heritage {
         rightIcon: 690,
         urlIcon: "assets/images/icons/jungfrau_aletsch.png",
         titlePopUp: "title_alpen",
-        textPopUp: "Text",
+        textPopUp: "since_alpen",
         urlPopUp: "assets/images/headers/aletsch.jpg"),
     Heritage(
         titleDetail: "title_lavaux",
@@ -63,7 +63,7 @@ class HeritageData extends Heritage {
         rightIcon: 1020,
         urlIcon: "assets/images/icons/lavaux.png",
         titlePopUp: "title_lavaux",
-        textPopUp: "Text",
+        textPopUp: "since_lavaux",
         urlPopUp: "assets/images/headers/lavaux.JPEG"),
     Heritage(
         titleDetail: "title_mustair",
@@ -72,7 +72,7 @@ class HeritageData extends Heritage {
         rightIcon: 55,
         urlIcon: "assets/images/icons/mustair.png",
         titlePopUp: "title_mustair",
-        textPopUp: "Text",
+        textPopUp: "since_mustair",
         urlPopUp: "assets/images/headers/mustair.jpg"),
     Heritage(
         titleDetail: "title_pfahlbauten",
@@ -81,7 +81,7 @@ class HeritageData extends Heritage {
         rightIcon: 700,
         urlIcon: "assets/images/icons/pfahlbauten.png",
         titlePopUp: "title_pfahlbauten",
-        textPopUp: "Text",
+        textPopUp: "since_pfahlbauten",
         urlPopUp: "assets/images/headers/pfahlbauten.jpg"),
     Heritage(
         titleDetail: "title_monte",
@@ -90,7 +90,7 @@ class HeritageData extends Heritage {
         rightIcon: 430,
         urlIcon: "assets/images/icons/san_giorgio.png",
         titlePopUp: "title_monte",
-        textPopUp: "Text",
+        textPopUp: "since_monte",
         urlPopUp: "assets/images/headers/monte.jpg"),
     Heritage(
         titleDetail: "title_arena",
@@ -99,7 +99,7 @@ class HeritageData extends Heritage {
         rightIcon: 370,
         urlIcon: "assets/images/icons/sardona.png",
         titlePopUp: "title_arena",
-        textPopUp: "Text",
+        textPopUp: "since_arena",
         urlPopUp: "assets/images/headers/arena.jpg"),
     Heritage(
         titleDetail: "title_gallen",
@@ -108,7 +108,7 @@ class HeritageData extends Heritage {
         rightIcon: 310,
         urlIcon: "assets/images/icons/st_gallen.png",
         titlePopUp: "title_gallen",
-        textPopUp: "Text",
+        textPopUp: "since_gallen",
         urlPopUp: "assets/images/headers/st_gallen.jpg")
   ];
   static Heritage fetchAny() {

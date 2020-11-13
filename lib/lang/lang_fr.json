@@ -7,7 +7,7 @@
 
     "UNESCO Welterbe": "UNESCO",
     "Quiz": "Quiz",
-    "Über uns": "Sur nous",
+    "Über uns": "À propos de nous",
     "Sprache": "Langue",
 
     "unesco_first_title": "L'UNESCO",
@@ -33,5 +33,19 @@
     "title_gallen" : "Domaine conventuel de Saint-Gall",
     "title_bern" : "Vieille ville de Berne",
 
-    "button_more" : "Plus"
+    "since_bellinzona" : "Patrimoine culturel depuis 2000",
+    "since_alpen" : "Patrimoine naturel depuis 2001",
+    "since_arena" : "Patrimoine naturel depuis 2008",
+    "since_bahn" : "Patrimoine culturel depuis 2008",
+    "since_chaux" : "Patrimoine culturel depuis 2009",
+    "since_lavaux" : "Patrimoine culturel depuis 2007",
+    "since_corbusier" : "Patrimoine culturel depuis 2016",
+    "since_monte" : "Patrimoine naturel depuis 2003",
+    "since_mustair" : "Patrimoine culturel depuis 1983",
+    "since_pfahlbauten" : "Patrimoine culturel depuis 2011",
+    "since_gallen" : "Patrimoine culturel depuis 1983",
+    "since_bern" : "Patrimoine culturel depuis 1983",
+
+    "button_more" : "PLUS",
+    "button_cancel" : "RETOUR"
 }

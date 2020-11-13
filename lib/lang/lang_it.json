@@ -7,7 +7,7 @@
 
     "UNESCO Welterbe": "UNESCO",
     "Quiz": "Quiz",
-    "Über uns": "Su noi",
+    "Über uns": "Chi siamo",
     "Sprache": "Lingua",
 
     "unesco_first_title": "L'UNESCO",
@@ -33,5 +33,19 @@
     "title_gallen" : "Abbazia di San Gallo",
     "title_bern" : "Centro storico di Berna",
 
-    "button_more" : "Di Più"
+    "since_bellinzona" : "Patrimonio culturale dal 2000",
+    "since_alpen" : "Patrimonio naturale dal 2001",
+    "since_arena" : "Patrimonio naturale dal 2008",
+    "since_bahn" : "Patrimonio culturale dal 2008",
+    "since_chaux" : "Patrimonio culturale dal 2009",
+    "since_lavaux" : "Patrimonio culturale dal 2007",
+    "since_corbusier" : "Patrimonio culturale dal 2016",
+    "since_monte" : "Patrimonio naturale dal 2003",
+    "since_mustair" : "Patrimonio culturale dal 1983",
+    "since_pfahlbauten" : "Patrimonio culturale dal 2011",
+    "since_gallen" : "Patrimonio culturale dal 1983",
+    "since_bern" : "Patrimonio culturale dal 1983",
+    
+    "button_more" : "ALTRO",
+    "button_cancel" : "TORNA"
 }

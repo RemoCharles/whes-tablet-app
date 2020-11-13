@@ -33,5 +33,19 @@
     "title_gallen" : "Convent of St. Gall",
     "title_bern" : "Old City of Bern",
 
-    "button_more" : "More"
+    "since_bellinzona" : "Cultural Heritage since 2000",
+    "since_alpen" : "Natural Heritage since 2001",
+    "since_arena" : "Natural Heritage since 2008",
+    "since_bahn" : "Cultural Heritage since 2008",
+    "since_chaux" : "Cultural Heritage since 2009",
+    "since_lavaux" : "Cultural Heritage since 2007",
+    "since_corbusier" : "Cultural Heritage since 2016",
+    "since_monte" : "Natural Heritage since 2003",
+    "since_mustair" : "Cultural Heritage since 1983",
+    "since_pfahlbauten" : "Cultural Heritage since 2011",
+    "since_gallen" : "Cultural Heritage since 1983",
+    "since_bern" : "Cultural Heritage since 1983",
+
+    "button_more" : "MORE",
+    "button_cancel" : "BACK"
 }
