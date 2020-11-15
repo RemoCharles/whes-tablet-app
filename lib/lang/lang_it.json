@@ -47,5 +47,25 @@
     "since_bern" : "Patrimonio culturale dal 1983",
     
     "button_more" : "ALTRO",
-    "button_cancel" : "TORNA"
+    "button_cancel" : "TORNA",
+
+    "quiz_start_text" : "Nel seguente quiz potete dimostrare le vostre conoscenze sui siti del patrimonio mondiale dell'UNESCO in Svizzera. Ci sono 5 domande con 4 possibili risposte ciascuna. Tuttavia, solo una risposta è corretta. Attenzione: ogni domanda ha un timer di 30 secondi. Quando il timer scade, la domanda successiva continuerà.",
+    "quiz_start_button" : "Inizia il quiz",
+    "quiz_start_title_small" : "Info sul quiz",
+
+    "button_quiz_title" : "Quiz",
+    "button_quiz_text" : "Vuoi finire il quiz?\nIl progresso non viene salvato.",
+    "button_quiz_yes" : "SI",
+    "button_quiz_no" : "NO",
+    
+    "quiz_end_title" : "Risultato",
+    "quiz_5_text" : "Wow, fantastico! Hai fatto 5 punti.",
+    "quiz_4_text" : "Molto bene! Hai fatto 4 punti.",
+    "quiz_3_text" : "Bene! Hai fatto 3 punti.",
+    "quiz_2_text" : "Tu puoi fare meglio... Hai fatto 2 punti.",
+    "quiz_1_text" : "Tu puoi fare molto meglio... Hai fatto 1 punto",
+    "quiz_0_text" : "Ops, tu puoi fare molto meglio... Hai fatto 0 punti.",
+
+    "quiz_end_button" : "Uscita",
+    "quiz_again_button" : "Di nuovo"
 }

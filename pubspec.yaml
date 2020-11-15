@@ -57,6 +57,8 @@ flutter:
     - assets/images/
     - assets/images/icons/
     - assets/images/headers/
+    - assets/images/quiz/
+    - assets/questions/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

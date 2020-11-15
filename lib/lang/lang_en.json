@@ -47,5 +47,25 @@
     "since_bern" : "Cultural Heritage since 1983",
 
     "button_more" : "MORE",
-    "button_cancel" : "BACK"
+    "button_cancel" : "BACK",
+
+    "quiz_start_text" : "In the following quiz you can prove your knowledge about the UNESCO World Heritage of Switzerland. There are 5 questions with 4 possible answers each. However, only one answer is correct. Note: Each question has a timer of 30 seconds. When the timer runs out, the next question will be continued.",
+    "quiz_start_button" : "Start the quiz",
+    "quiz_start_title_small" : "About the quiz",
+
+    "button_quiz_title" : "Quiz",
+    "button_quiz_text" : "Do you want to finish the quiz?\nThe progress is not saved.",
+    "button_quiz_yes" : "YES",
+    "button_quiz_no" : "NO",
+    
+    "quiz_end_title" : "Result",
+    "quiz_5_text" : "Wow, great! You scored 5 points.",
+    "quiz_4_text" : "Very good! You scored 4 points.",
+    "quiz_3_text" : "Good! You scored 3 points.",
+    "quiz_2_text" : "You can do better... You scored 2 points.",
+    "quiz_1_text" : "You can do much better... You scored 1 points.",
+    "quiz_0_text" : "Oops, you can do much better... You scored 0 points.",
+
+    "quiz_end_button" : "Quit",
+    "quiz_again_button" : "Again"
 }

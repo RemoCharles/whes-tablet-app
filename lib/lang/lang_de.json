@@ -47,5 +47,25 @@
     "since_bern" : "Weltkulturerbe seit 1983",
 
     "button_more" : "MEHR",
-    "button_cancel" : "ZURÜCK"
+    "button_cancel" : "ZURÜCK",
+
+    "quiz_start_text" : "In folgendem Quiz kannst du dein Wissen über die UNESCO Welterben der Schweiz unter Beweis stellen. Es sind 5 Fragen mit jeweils 4 möglichen Antworten. Es ist jedoch nur eine Antwort korrekt. Achtung: Jede Frage hat einen Timer von 30 Sekunden. Wenn der Timer ausläuft, geht es weiter mit der nächsten Frage.",
+    "quiz_start_button" : "Starte das Quiz",
+    "quiz_start_title_small" : "Kurze Info zum Quiz",
+
+    "button_quiz_title" : "Quiz",
+    "button_quiz_text" : "Möchten Sie das Quiz beenden?\nDer Fortschritt wird nicht gespeichert.",
+    "button_quiz_yes" : "JA",
+    "button_quiz_no" : "NEIN",
+    
+    "quiz_end_title" : "Resultat",
+    "quiz_5_text" : "Wow, super! Du hast 5 Punkte erzielt.",
+    "quiz_4_text" : "Sehr gut! Du hast 4 Punkte erzielt.",
+    "quiz_3_text" : "Gut! Du hast 3 Punkte erzielt.",
+    "quiz_2_text" : "Das kannst du besser... Du hast 2 Punkte erzielt.",
+    "quiz_1_text" : "Das kannst du viel besser... Du hast 1 Punkt erreicht.",
+    "quiz_0_text" : "Ups, das kannst du viel besser... Du hast 0 Punkte erreicht.",
+
+    "quiz_end_button" : "Beenden",
+    "quiz_again_button" : "Nochmals"
 } 

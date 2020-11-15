@@ -5,12 +5,14 @@ class Styles {
   static const _textSizeTitle = 30.0;
   static const _textSizeLowerTitle = 25.0;
   static const _textSizeText = 20.0;
-  static const _textSizeButtonTitle = 18.0;
+  static const _textSizeFlatButtonTitle = 18.0;
+  static const _textSizeRaisedButtonTitle = 20.0;
   static const _textSizePopUpTitle = 23.0;
   static const _textColorText = Color(0xFF3C3C3B);
   static const _textColorLowerTitle = Color(0xFF3C3C3B);
   static const _textColorTitle = Color(0xFFC80B0E);
-  static const _textColorButtonTitle = Color(0xFFC80B0E);
+  static const _textColorButtonTitleFlat = Color(0xFFC80B0E);
+  static const _textColorButtonTitleRaised = Color(0xFF3C3C3B);
   static const _colorIcons = Color(0xFF3C3C3B);
 
   static final textPopUpTitle = TextStyle(
@@ -38,9 +40,15 @@ class Styles {
       fontFamily: 'helvetica',
       fontWeight: FontWeight.w300);
 
-  static final textButton = TextStyle(
-      fontSize: _textSizeButtonTitle,
-      color: _textColorButtonTitle,
+  static final textButtonFlat = TextStyle(
+      fontSize: _textSizeFlatButtonTitle,
+      color: _textColorButtonTitleFlat,
+      fontFamily: 'helvetica',
+      fontWeight: FontWeight.w300);
+
+  static final textButtonRaised = TextStyle(
+      fontSize: _textSizeRaisedButtonTitle,
+      color: _textColorButtonTitleRaised,
       fontFamily: 'helvetica',
       fontWeight: FontWeight.w300);
 
@@ -48,5 +56,9 @@ class Styles {
 
   static final iconColor = Color(0xFF3C3C3B);
 
-  static final tileHoverColor = Color(0xFFC80B0E);
+  static final buttonColor = Color(0xFFFFFFFF);
+
+  static final tileHoverColor = Color(0xFFE48587);
+
+  static final buttonBorderColor = Color(0xFF3C3C3B);
 }

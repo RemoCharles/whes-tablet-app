@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:whes_tablet_app/classes/heritage.dart';
 import 'package:whes_tablet_app/classes/language.dart';
 import 'package:whes_tablet_app/localization/language_constants.dart';
@@ -6,7 +7,7 @@ import 'package:whes_tablet_app/main.dart';
 import 'package:whes_tablet_app/classes/styles.dart';
 import 'package:whes_tablet_app/pages/about_us_site.dart';
 import 'package:whes_tablet_app/pages/heritage_detail_site.dart';
-import 'package:whes_tablet_app/pages/quiz_start.dart';
+import 'package:whes_tablet_app/pages/quiz_start_site.dart';
 import 'package:whes_tablet_app/pages/unesco_site.dart';
 
 class IndexSite extends StatefulWidget {
@@ -27,6 +28,8 @@ class _IndexSiteState extends State<IndexSite> {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
     return Scaffold(
       appBar: AppBar(
         actions: <Widget>[_dropDownButton()],
@@ -155,12 +158,16 @@ class _IndexSiteState extends State<IndexSite> {
             child: GestureDetector(
                 onTap: () {
                   showDialog(
-                      context: context,
-                      builder: (context) => AlertDialog(
-                          actions: _popUpButton(heritage),
-                          contentPadding: EdgeInsets.zero,
-                          content: _popUpBuilder(heritage.urlPopUp,
-                              heritage.titlePopUp, heritage.textPopUp)));
+                    context: context,
+                    builder: (context) => AlertDialog(
+                        shape: RoundedRectangleBorder(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(10.0))),
+                        actions: _popUpButton(heritage),
+                        contentPadding: EdgeInsets.zero,
+                        content: _popUpBuilder(heritage.urlPopUp,
+                            heritage.titlePopUp, heritage.textPopUp)),
+                  );
                 },
                 child: _iconDesign(heritage))));
   }
@@ -218,7 +225,7 @@ class _IndexSiteState extends State<IndexSite> {
       decoration: BoxDecoration(
           image: DecorationImage(image: AssetImage(url), fit: BoxFit.cover),
           borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(3.0), topRight: Radius.circular(3.0))),
+              topLeft: Radius.circular(10.0), topRight: Radius.circular(10.0))),
     );
   }
 
@@ -227,14 +234,14 @@ class _IndexSiteState extends State<IndexSite> {
       FlatButton(
         child: new Text(
           getTranslated(context, "button_cancel"),
-          style: Styles.textButton,
+          style: Styles.textButtonFlat,
         ),
         onPressed: () => Navigator.of(context).pop(),
       ),
       FlatButton(
           child: new Text(
             getTranslated(context, "button_more"),
-            style: Styles.textButton,
+            style: Styles.textButtonFlat,
           ),
           onPressed: () => _navigationToHeritageDetail(context, heritage))
     ];
