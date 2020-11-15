@@ -17,13 +17,17 @@ class AboutUs extends StatelessWidget {
         children: [
           Expanded(
               flex: 6,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  _sectionTitle(getTranslated(context, "about_us_first_title")),
-                  _sectionText(getTranslated(context, "about_us_first_text"))
-                ],
+              child: Material(
+                elevation: 2.0,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    _sectionTitle(
+                        getTranslated(context, "about_us_first_title")),
+                    _sectionText(getTranslated(context, "about_us_first_text"))
+                  ],
+                ),
               )),
           Expanded(
               flex: 4,

@@ -17,17 +17,21 @@ class Unesco extends StatelessWidget {
         children: [
           Expanded(
               flex: 6,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  _sectionTitle(getTranslated(context, "unesco_first_title")),
-                  _sectionText(getTranslated(context, "unesco_first_text")),
-                  _sectionTitle(getTranslated(context, "unesco_second_title")),
-                  _sectionText(getTranslated(context, "unesco_second_text")),
-                  _sectionTitle(getTranslated(context, "unesco_third_title")),
-                  _sectionText(getTranslated(context, "unesco_third_text"))
-                ],
+              child: Material(
+                elevation: 2.0,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    _sectionTitle(getTranslated(context, "unesco_first_title")),
+                    _sectionText(getTranslated(context, "unesco_first_text")),
+                    _sectionTitle(
+                        getTranslated(context, "unesco_second_title")),
+                    _sectionText(getTranslated(context, "unesco_second_text")),
+                    _sectionTitle(getTranslated(context, "unesco_third_title")),
+                    _sectionText(getTranslated(context, "unesco_third_text"))
+                  ],
+                ),
               )),
           Expanded(
               flex: 4,
@@ -35,9 +39,9 @@ class Unesco extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    _sectionPicture("assets/images/canyon.jpg"),
-                    _sectionPicture("assets/images/reef.jpg"),
-                    _sectionPicture("assets/images/egypt.jpg"),
+                    _sectionPicture("assets/images/unesco/canyon.jpg"),
+                    _sectionPicture("assets/images/unesco/reef.jpg"),
+                    _sectionPicture("assets/images/unesco/egypt.jpg"),
                   ]))
         ],
       )),

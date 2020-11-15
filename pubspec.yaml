@@ -58,6 +58,8 @@ flutter:
     - assets/images/icons/
     - assets/images/headers/
     - assets/images/quiz/
+    - assets/images/lang/
+    - assets/images/unesco/
     - assets/questions/
 
 

@@ -7,10 +7,10 @@ class Language {
 
   static List<Language> languageList() {
     return <Language>[
-      Language("de", "Deutsch", "assets/images/deutschland.png"),
-      Language("fr", "Francais", "assets/images/frankreich.png"),
-      Language("it", "Italiano", "assets/images/italien.png"),
-      Language("en", "English", "assets/images/england.png"),
+      Language("de", "Deutsch", "assets/images/lang/deutschland.png"),
+      Language("fr", "Francais", "assets/images/lang/frankreich.png"),
+      Language("it", "Italiano", "assets/images/lang/italien.png"),
+      Language("en", "English", "assets/images/lang/england.png"),
     ];
   }
 }

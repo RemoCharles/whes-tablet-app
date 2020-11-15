@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:whes_tablet_app/classes/heritage_data.dart';
 import 'package:whes_tablet_app/classes/styles.dart';
 import 'package:whes_tablet_app/localization/language_constants.dart';
@@ -52,42 +53,49 @@ class _ResultState extends State<Result> {
   _ResultState(this.marks);
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
     return Scaffold(
       appBar: AppBar(
         title: Text(getTranslated(context, 'quiz_end_title'),
             style: Styles.textTitle),
       ),
       body: Column(
-        children: <Widget>[_textAndImage(), _endButtons()],
+        children: <Widget>[_renderTextAndImage(), _endButtons()],
       ),
     );
   }
 
-  Widget _textAndImage() {
+  Widget _endImage() {
+    return Material(
+      child: Container(
+        width: 200.0,
+        height: 200.0,
+        child: Image(image: AssetImage(image)),
+      ),
+    );
+  }
+
+  Widget _endText() {
+    return Padding(
+      padding: const EdgeInsets.all(20.0),
+      child: Center(
+        child: Text(
+          getTranslated(context, message),
+          style: Styles.textText,
+        ),
+      ),
+    );
+  }
+
+  Widget _renderTextAndImage() {
     return Expanded(
       flex: 7,
       child: Material(
         elevation: 2.0,
         child: Container(
             child: Column(
-          children: <Widget>[
-            Material(
-              child: Container(
-                width: 200.0,
-                height: 200.0,
-                child: Image(image: AssetImage(image)),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Center(
-                child: Text(
-                  getTranslated(context, message),
-                  style: Styles.textText,
-                ),
-              ),
-            )
-          ],
+          children: <Widget>[_endImage(), _endText()],
         )),
       ),
     );
@@ -98,60 +106,62 @@ class _ResultState extends State<Result> {
       flex: 3,
       child: Row(
         children: <Widget>[
-          Expanded(
-            flex: 5,
-            child: Container(
-              alignment: Alignment.center,
-              padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: SizedBox(
-                width: 200.0,
-                height: 50.0,
-                child: RaisedButton(
-                  child: Text(
-                    getTranslated(context, "quiz_again_button"),
-                    style: Styles.textButtonRaised,
-                  ),
-                  onPressed: () {
-                    Navigator.of(context).pushReplacement(
-                        MaterialPageRoute(builder: (context) => QuizStart()));
-                  },
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                  ),
-                  color: Styles.buttonColor,
-                  splashColor: Styles.tileHoverColor,
-                ),
-              ),
-            ),
-          ),
-          Expanded(
-            flex: 5,
-            child: Container(
-              alignment: Alignment.center,
-              padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: SizedBox(
-                width: 200.0,
-                height: 50.0,
-                child: RaisedButton(
-                  child: Text(
-                    getTranslated(context, "quiz_end_button"),
-                    style: Styles.textButtonRaised,
-                  ),
-                  onPressed: () {
-                    Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (context) =>
-                            IndexSite(heritages: widget.heritageData)));
-                  },
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                  ),
-                  color: Styles.buttonColor,
-                  splashColor: Styles.tileHoverColor,
-                ),
-              ),
-            ),
-          ),
+          Expanded(flex: 5, child: _againQuizButton()),
+          Expanded(flex: 5, child: _endQuizButton()),
         ],
+      ),
+    );
+  }
+
+  Widget _againQuizButton() {
+    return Container(
+      alignment: Alignment.center,
+      padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+      child: SizedBox(
+        width: 200.0,
+        height: 50.0,
+        child: RaisedButton(
+          child: Text(
+            getTranslated(context, "quiz_again_button"),
+            style: Styles.textButtonRaised,
+          ),
+          onPressed: () {
+            Navigator.of(context).pushReplacement(
+                MaterialPageRoute(builder: (context) => QuizStart()));
+          },
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+          ),
+          color: Styles.buttonColor,
+          splashColor: Styles.tileHoverColor,
+        ),
+      ),
+    );
+  }
+
+  Widget _endQuizButton() {
+    return Container(
+      alignment: Alignment.center,
+      padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+      child: SizedBox(
+        width: 200.0,
+        height: 50.0,
+        child: RaisedButton(
+          child: Text(
+            getTranslated(context, "quiz_end_button"),
+            style: Styles.textButtonRaised,
+          ),
+          onPressed: () {
+            Navigator.of(context).pushReplacement(MaterialPageRoute(
+                builder: (context) =>
+                    IndexSite(heritages: widget.heritageData)));
+          },
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+          ),
+          color: Styles.buttonColor,
+          splashColor: Styles.tileHoverColor,
+        ),
       ),
     );
   }

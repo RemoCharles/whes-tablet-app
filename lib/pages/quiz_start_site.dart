@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:whes_tablet_app/localization/language_constants.dart';
 import 'package:whes_tablet_app/classes/styles.dart';
 import 'package:whes_tablet_app/pages/quiz_site.dart';
@@ -11,6 +12,8 @@ class QuizStart extends StatefulWidget {
 class _QuizStartState extends State<QuizStart> {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
     return Scaffold(
       appBar: AppBar(
         title: Text(getTranslated(context, 'quiz_start_title'),
