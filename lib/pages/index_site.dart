@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:transparent_image/transparent_image.dart';
 import 'package:whes_tablet_app/classes/heritage.dart';
 import 'package:whes_tablet_app/classes/language.dart';
 import 'package:whes_tablet_app/localization/language_constants.dart';
@@ -20,6 +21,23 @@ class IndexSite extends StatefulWidget {
 
 class _IndexSiteState extends State<IndexSite> {
   final GlobalKey<FormState> key = GlobalKey<FormState>();
+
+  Image indexBackground;
+  Image drawerHeader;
+
+  @override
+  void initState() {
+    super.initState();
+    indexBackground = Image.asset("assets/images/karte_schweiz.png");
+    drawerHeader = Image.asset("assets/images/WHES_Website_Logo.png");
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    precacheImage(indexBackground.image, context);
+    precacheImage(drawerHeader.image, context);
+  }
 
   void _changeLanguage(Language languagecode) async {
     Locale _locale = await setLocale(languagecode.languageCode);
@@ -127,8 +145,7 @@ class _IndexSiteState extends State<IndexSite> {
           child: Text('', style: Styles.textLowerTitle),
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("assets/images/WHES_Website_Logo.png"),
-                  fit: BoxFit.scaleDown))),
+                  image: drawerHeader.image, fit: BoxFit.none))),
     );
   }
 
@@ -139,7 +156,7 @@ class _IndexSiteState extends State<IndexSite> {
             color: Colors.white,
             image: DecorationImage(
               fit: BoxFit.cover,
-              image: AssetImage("assets/images/karte_schweiz.png"),
+              image: indexBackground.image,
             )),
         child: _iconContent());
   }
@@ -189,7 +206,7 @@ class _IndexSiteState extends State<IndexSite> {
   Widget _popUpBuilder(String url, String title, String text) {
     return Container(
         width: 400,
-        height: 260,
+        height: 300,
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
@@ -222,10 +239,15 @@ class _IndexSiteState extends State<IndexSite> {
       width: 400,
       height: 150,
       padding: const EdgeInsets.all(0.0),
-      decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage(url), fit: BoxFit.cover),
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(10.0), topRight: Radius.circular(10.0))),
+      child: ClipRRect(
+        borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(10.0), topRight: Radius.circular(10.0)),
+        child: FadeInImage(
+          fit: BoxFit.fitWidth,
+          image: AssetImage(url),
+          placeholder: MemoryImage(kTransparentImage),
+        ),
+      ),
     );
   }
 

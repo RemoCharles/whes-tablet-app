@@ -61,6 +61,7 @@ flutter:
     - assets/images/lang/
     - assets/images/unesco/
     - assets/questions/
+    - assets/gifs/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

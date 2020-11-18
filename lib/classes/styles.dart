@@ -61,4 +61,6 @@ class Styles {
   static final tileHoverColor = Color(0xFFE48587);
 
   static final buttonBorderColor = Color(0xFF3C3C3B);
+
+  static final progressColor = Color(0xFFC80B0E);
 }

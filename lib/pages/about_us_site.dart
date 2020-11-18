@@ -65,6 +65,7 @@ class AboutUs extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(25.0, 25.0, 25.0, 5.0),
       child: Image.asset(
         url,
+        fit: BoxFit.none,
       ),
     );
   }
