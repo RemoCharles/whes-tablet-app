@@ -7,6 +7,7 @@ class Heritage {
   final String titlePopUp;
   final String textPopUp;
   final String urlPopUp;
+  final List<String> heritageGallery;
 
   Heritage(
       {this.titleDetail,
@@ -16,5 +17,6 @@ class Heritage {
       this.urlIcon,
       this.titlePopUp,
       this.textPopUp,
-      this.urlPopUp});
+      this.urlPopUp,
+      this.heritageGallery});
 }

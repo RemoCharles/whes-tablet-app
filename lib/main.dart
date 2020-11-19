@@ -51,6 +51,9 @@ class _MyAppState extends State<MyApp> {
         debugShowCheckedModeBanner: false,
         title: "WHES TABLET APP",
         theme: ThemeData(
+            appBarTheme: AppBarTheme(
+              iconTheme: Styles.iconThemeColor,
+            ),
             iconTheme: Styles.iconThemeColor,
             primaryColor: Styles.PrimaryColor,
             visualDensity: VisualDensity.adaptivePlatformDensity),

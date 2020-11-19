@@ -49,6 +49,8 @@
     "button_more" : "PLUS",
     "button_cancel" : "RETOUR",
 
+    "gallery_tab" : "Galerie",
+
     "quiz_start_text" : "Dans le quiz suivant, vous pouvez prouver vos connaissances sur les sites du patrimoine mondial de l'UNESCO en Suisse. Il y a 5 questions avec 4 réponses possibles chacune. Cependant, une seule réponse est correcte. Attention : chaque question est dotée d'un minuteur de 30 secondes. Lorsque le délai expire, la question suivante se poursuit.",
     "quiz_start_button" : "Lancer le quiz",
     "quiz_start_title_small" : "Infos sur le quiz",

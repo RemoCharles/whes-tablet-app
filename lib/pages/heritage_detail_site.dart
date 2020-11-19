@@ -2,34 +2,62 @@ import 'package:flutter/material.dart';
 import 'package:whes_tablet_app/classes/heritage.dart';
 import 'package:whes_tablet_app/classes/styles.dart';
 import 'package:whes_tablet_app/localization/language_constants.dart';
+import 'package:whes_tablet_app/pages/heritage_detail_gallery_site.dart';
+import 'package:whes_tablet_app/pages/heritage_detail_info_site.dart';
 
-class HeritageDetail extends StatelessWidget {
+class HeritageDetail extends StatefulWidget {
+  HeritageDetail({Key key, this.heritage}) : super(key: key);
   final Heritage heritage;
-  HeritageDetail(this.heritage);
+
+  @override
+  _HeritageDetailState createState() => _HeritageDetailState();
+}
+
+class _HeritageDetailState extends State<HeritageDetail> {
+  int _currentIndex = 0;
+  List<Widget> _children = List<Widget>();
+
+  @override
+  void initState() {
+    _children.add(HeritageDetailInfo(widget.heritage));
+    _children.add(HeritageDetailGallery(widget.heritage));
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-            title: Text(getTranslated(context, heritage.titleDetail),
-                style: Styles.textTitle)),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: _renderBody(context, heritage),
-        ));
-  }
-
-  List<Widget> _renderBody(BuildContext context, Heritage heritage) {
-    var result = List<Widget>();
-    result.add(_bannerImage(heritage.urlDetail, 170.0));
-    return result;
-  }
-
-  Widget _bannerImage(String url, double height) {
-    return Container(
-      constraints: BoxConstraints.tightFor(height: height),
-      child: Image.asset(url, fit: BoxFit.fitWidth),
+      appBar: AppBar(
+          title: Text(getTranslated(context, widget.heritage.titleDetail),
+              style: Styles.textTitle)),
+      body: _children[_currentIndex],
+      bottomNavigationBar: BottomNavigationBar(
+          selectedItemColor: Styles.selectedIconColor,
+          unselectedItemColor: Styles.unselectedIconColor,
+          onTap: onTabTapped,
+          currentIndex: _currentIndex,
+          items: <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+                icon: new Icon(
+                  Icons.info,
+                ),
+                title: new Text(
+                  "Info",
+                  style: Styles.textTab,
+                )),
+            BottomNavigationBarItem(
+                icon: new Icon(
+                  Icons.image,
+                ),
+                title: new Text(getTranslated(context, "gallery_tab"),
+                    style: Styles.textTab))
+          ]),
     );
+  }
+
+  void onTabTapped(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
   }
 }

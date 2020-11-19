@@ -8,12 +8,13 @@ class Styles {
   static const _textSizeFlatButtonTitle = 18.0;
   static const _textSizeRaisedButtonTitle = 20.0;
   static const _textSizePopUpTitle = 23.0;
+  static const _textSizeTabText = 14.0;
   static const _textColorText = Color(0xFF3C3C3B);
   static const _textColorLowerTitle = Color(0xFF3C3C3B);
   static const _textColorTitle = Color(0xFFC80B0E);
   static const _textColorButtonTitleFlat = Color(0xFFC80B0E);
   static const _textColorButtonTitleRaised = Color(0xFF3C3C3B);
-  static const _colorIcons = Color(0xFF3C3C3B);
+  static const _colorIconsSelected = Color(0xFF3C3C3B);
 
   static final textPopUpTitle = TextStyle(
       fontSize: _textSizePopUpTitle,
@@ -52,9 +53,19 @@ class Styles {
       fontFamily: 'helvetica',
       fontWeight: FontWeight.w300);
 
-  static final iconThemeColor = IconThemeData(color: _colorIcons);
+  static final textTab = TextStyle(
+      fontSize: _textSizeTabText,
+      color: _textColorText,
+      fontFamily: 'helvetica',
+      fontWeight: FontWeight.w300);
+
+  static final iconThemeColor = IconThemeData(color: _colorIconsSelected);
 
   static final iconColor = Color(0xFF3C3C3B);
+
+  static final selectedIconColor = Color(0xFFC80B0E);
+
+  static final unselectedIconColor = Color(0xFF3C3C3B);
 
   static final buttonColor = Color(0xFFFFFFFF);
 

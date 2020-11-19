@@ -273,7 +273,9 @@ class _IndexSiteState extends State<IndexSite> {
     Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => HeritageDetail(heritage),
+          builder: (context) => HeritageDetail(
+            heritage: heritage,
+          ),
         ));
   }
 }
