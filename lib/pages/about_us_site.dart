@@ -20,8 +20,8 @@ class AboutUs extends StatelessWidget {
               child: Material(
                 elevation: 2.0,
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     _sectionTitle(
                         getTranslated(context, "about_us_first_title")),
@@ -33,7 +33,7 @@ class AboutUs extends StatelessWidget {
               flex: 4,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
-                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   _sectionPicture("assets/images/WHES_Website_Logo.png")
                 ],
