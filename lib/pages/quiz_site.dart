@@ -203,9 +203,11 @@ class _QuizState extends State<Quiz> {
       actions: <Widget>[
         FlatButton(
             onPressed: () {
-              Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) =>
-                      IndexSite(heritages: widget.heritageData)));
+              Navigator.of(context).pushAndRemoveUntil(
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          IndexSite(heritages: widget.heritageData)),
+                  (Route<dynamic> route) => false);
             },
             child: Text(getTranslated(context, "button_quiz_yes"),
                 style: Styles.textButtonFlat)),
