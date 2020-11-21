@@ -6,6 +6,7 @@ import 'package:whes_tablet_app/localization/language_constants.dart';
 import 'package:whes_tablet_app/pages/index_site.dart';
 import 'package:whes_tablet_app/pages/quiz_start_site.dart';
 
+// ignore: must_be_immutable
 class Result extends StatefulWidget {
   final heritageData = HeritageData.fetchAll();
   int marks;
@@ -69,8 +70,9 @@ class _ResultState extends State<Result> {
   Widget _endImage() {
     return Material(
       child: Container(
-        width: 200.0,
-        height: 200.0,
+        padding: const EdgeInsets.all(20.0),
+        width: 300.0,
+        height: 300.0,
         child: Image(image: AssetImage(image)),
       ),
     );

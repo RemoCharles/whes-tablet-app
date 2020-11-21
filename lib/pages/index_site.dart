@@ -55,17 +55,20 @@ class _IndexSiteState extends State<IndexSite> {
             style: Styles.textTitle),
       ),
       body: _backgroundContent(),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.all(5),
-          children: <Widget>[
-            _drawerHeader(),
-            _drawer(
-                getTranslated(context, 'UNESCO Welterbe'), context, Unesco()),
-            _drawer(getTranslated(context, 'Quiz'), context, QuizStart()),
-            _drawer(getTranslated(context, 'Über uns'), context, AboutUs()),
-            _drawerExpansion(getTranslated(context, 'Sprache'), context)
-          ],
+      drawer: Container(
+        width: 350.0,
+        child: Drawer(
+          child: ListView(
+            padding: EdgeInsets.all(5),
+            children: <Widget>[
+              _drawerHeader(),
+              _drawer(
+                  getTranslated(context, 'UNESCO Welterbe'), context, Unesco()),
+              _drawer(getTranslated(context, 'Quiz'), context, QuizStart()),
+              _drawer(getTranslated(context, 'Über uns'), context, AboutUs()),
+              _drawerExpansion(getTranslated(context, 'Sprache'), context)
+            ],
+          ),
         ),
       ),
     );
@@ -145,7 +148,7 @@ class _IndexSiteState extends State<IndexSite> {
           child: Text('', style: Styles.textLowerTitle),
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: drawerHeader.image, fit: BoxFit.none))),
+                  image: drawerHeader.image, fit: BoxFit.scaleDown))),
     );
   }
 

@@ -1,89 +1,89 @@
 [
     {
-        "1": "Was0 ist oaidnio acnaocno  aofnaoknikof?",
-        "2": "Which1 function finds out the Variable type in Python ?",
-        "3": "Which2 of the following keyword is used to define a function in Python ?",
-        "4": "Which3 of the following is a print Function in Python ?",
-        "5": "Which4 function finds out the Variable type in Python ?",
-        "6": "Which5 of the following keyword is used to define a function in Python ?",
-        "7": "Which6 function finds out the Variable type in Python ?",
-        "8": "Which7 of the following keyword is used to define a function in Python ?",
-        "9": "Which8 function finds out the Variable type in Python ?",
-        "10": "Whic9 of the following keyword is used to define a function in Python ?"
+        "1": "Was ist die Hauptstadt der Schweiz?",
+        "2": "Was ist die Hauptstadt von Frankreich?",
+        "3": "Was ist die Hauptstadt von Deutschland?",
+        "4": "Was ist die Hauptstadt von den USA?",
+        "5": "Was ist die Hauptstadt von Russland?",
+        "6": "Was ist die Hauptstadt von China?",
+        "7": "Was ist die Hauptstadt von Spanien?",
+        "8": "Was ist die Hauptstadt von Italien?",
+        "9": "Was ist die Hauptstadt von Grossbritannien?",
+        "10": "Was ist die Hauptstadt von Australien?"
     },
     {
         "1": {
-            "a": "pp",
-            "b": "ppp",
-            "c": "3p",
-            "d": "p3"
+            "a": "Zurich",
+            "b": "Bern",
+            "c": "Genf",
+            "d": "Basel"
         },
         "2": {
-            "a": "typedef",
-            "b": "typeof",
-            "c": "type",
-            "d": "find"
+            "a": "Rennes",
+            "b": "Lyon",
+            "c": "Paris",
+            "d": "Bordeaux"
         },
         "3": {
-            "a": "func",
-            "b": "def",
-            "c": "void",
-            "d": "function"
+            "a": "Berlin",
+            "b": "Düsseldorf",
+            "c": "Hamburg",
+            "d": "München"
         },
         "4": {
-            "a": "cout",
-            "b": "print",
-            "c": "println",
-            "d": "stderr"
+            "a": "New York",
+            "b": "Los Angeles",
+            "c": "Washington D.C.",
+            "d": "Charleston"
         },
         "5": {
-            "a": "typedef",
-            "b": "typeof",
-            "c": "type",
-            "d": "find"
+            "a": "St.Petersburg",
+            "b": "Moskau",
+            "c": "Vladivostok",
+            "d": "Sochi"
         },
         "6": {
-            "a": "func",
-            "b": "def",
-            "c": "void",
-            "d": "function"
+            "a": "Shanghai",
+            "b": "Bangkok",
+            "c": "Hong Kong",
+            "d": "Peking"
         },
         "7": {
-            "a": "typedef",
-            "b": "typeof",
-            "c": "type",
-            "d": "find"
+            "a": "Barcelona",
+            "b": "Madrid",
+            "c": "Lloret de Mar",
+            "d": "Ibiza"
         },
         "8": {
-            "a": "func",
-            "b": "def",
-            "c": "void",
-            "d": "function"
+            "a": "Rom",
+            "b": "Venedig",
+            "c": "Florenz",
+            "d": "Palermo"
         },
         "9": {
-            "a": "typedef",
-            "b": "typeof",
-            "c": "type",
-            "d": "find"
+            "a": "Oxford",
+            "b": "Edinbourgh",
+            "c": "London",
+            "d": "Lancaster"
         },
         "10": {
-            "a": "func",
-            "b": "def",
-            "c": "void",
-            "d": "function"
+            "a": "Sydney",
+            "b": "Canberra",
+            "c": "Hobbiton",
+            "d": "Mordor"
         }
     },
     {
-        "1": "ppp",
-        "2": "type",
-        "3": "def",
-        "4": "print",
-        "5": "type",
-        "6": "def",
-        "7": "type",
-        "8": "def",
-        "9": "type",
-        "10": "def"
+        "1": "Bern",
+        "2": "Paris",
+        "3": "Berlin",
+        "4": "Washington D.C.",
+        "5": "Moskau",
+        "6": "Peking",
+        "7": "Madrid",
+        "8": "Rom",
+        "9": "London",
+        "10": "Canberra"
     },
     {
         "1": "assets/images/quiz/q1.jpg",

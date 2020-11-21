@@ -13,7 +13,7 @@ class HeritageDetailGallery extends StatelessWidget {
   Widget _gridImages(Heritage heritage) {
     return GridView.builder(
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 4,
+          crossAxisCount: 3,
           childAspectRatio: 1.0,
           crossAxisSpacing: 3.0,
           mainAxisSpacing: 3.0),
