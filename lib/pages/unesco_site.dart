@@ -68,8 +68,11 @@ class Unesco extends StatelessWidget {
   Widget _sectionPicture(String url) {
     return Container(
       padding: const EdgeInsets.fromLTRB(25.0, 25.0, 25.0, 5.0),
-      child: Image.asset(
-        url,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(10.0),
+        child: Image.asset(
+          url,
+        ),
       ),
     );
   }
