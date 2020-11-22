@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'package:whes_tablet_app/classes/heritage.dart';
 import 'package:whes_tablet_app/classes/language.dart';
-import 'package:whes_tablet_app/localization/language_constants.dart';
+import 'package:whes_tablet_app/classes/language_constants.dart';
 import 'package:whes_tablet_app/main.dart';
 import 'package:whes_tablet_app/classes/styles.dart';
 import 'package:whes_tablet_app/pages/about_us_site.dart';

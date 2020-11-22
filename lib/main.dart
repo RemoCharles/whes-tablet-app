@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:whes_tablet_app/classes/styles.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:whes_tablet_app/localization/demo_localization.dart';
+import 'package:whes_tablet_app/classes/demo_localization.dart';
 import 'package:whes_tablet_app/pages/splash_site.dart';
-import 'localization/language_constants.dart';
+import 'classes/language_constants.dart';
 
 void main() => runApp(MyApp());
 

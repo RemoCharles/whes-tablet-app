@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:whes_tablet_app/classes/heritage_data.dart';
 import 'package:whes_tablet_app/classes/styles.dart';
-import 'package:whes_tablet_app/localization/language_constants.dart';
+import 'package:whes_tablet_app/classes/language_constants.dart';
 import 'package:whes_tablet_app/pages/index_site.dart';
 import 'package:whes_tablet_app/pages/quiz_start_site.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whes_tablet_app/localization/language_constants.dart';
+import 'package:whes_tablet_app/classes/language_constants.dart';
 import 'package:whes_tablet_app/classes/styles.dart';
 
 class Unesco extends StatelessWidget {
