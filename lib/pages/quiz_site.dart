@@ -84,8 +84,8 @@ class _QuizState extends State<Quiz> {
 
   genRandomArray() {
     var rand = new Random();
-    for (i = rand.nextInt(9) + 1;;) {
-      var list = new List<int>.generate(10, (int index) => index + 1);
+    for (i = rand.nextInt(25) + 1;;) {
+      var list = new List<int>.generate(26, (int index) => index);
       list.shuffle();
       randomArray = list.toSet().toList();
       if (randomArray.length < 5) {
@@ -152,16 +152,20 @@ class _QuizState extends State<Quiz> {
   void checkAnswer(String k) {
     if (mydata[2][i.toString()] == mydata[1][i.toString()][k]) {
       marks = marks + 1;
-      colortoshow = right;
+      for (var key in btncolor.keys) {
+        key == k ? btncolor[key] = right : btncolor[key] = wrong;
+      }
     } else {
-      colortoshow = wrong;
+      for (var key in btncolor.keys) {
+        mydata[2][i.toString()] == mydata[1][i.toString()][key]
+            ? btncolor[key] = right
+            : btncolor[key] = wrong;
+      }
     }
     setState(() {
-      btncolor[k] = colortoshow;
       canceltimer = true;
       disableAnswer = true;
     });
-
     Timer(Duration(seconds: 2), nextQuestion);
   }
 
@@ -251,8 +255,8 @@ class _QuizState extends State<Quiz> {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
       child: SizedBox(
-        width: 200.0,
-        height: 50.0,
+        width: 400.0,
+        height: 100.0,
         child: new RaisedButton(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(10.0)),
@@ -261,7 +265,7 @@ class _QuizState extends State<Quiz> {
           child: new Text(
             mydata[1][i.toString()][k],
             style: Styles.textButtonRaised,
-            maxLines: 1,
+            maxLines: 2,
           ),
           color: btncolor[k],
           splashColor: Styles.tileHoverColor,
