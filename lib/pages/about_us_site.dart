@@ -32,10 +32,11 @@ class AboutUs extends StatelessWidget {
           Expanded(
               flex: 4,
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  _sectionPicture("assets/images/WHES_Website_Logo.png")
+                  _sectionPictureLogo("assets/images/WHES_Website_Logo.png"),
+                  _sectionPicture("assets/images/qr/whes.png")
                 ],
               ))
         ],
@@ -60,7 +61,7 @@ class AboutUs extends StatelessWidget {
         ));
   }
 
-  Widget _sectionPicture(String url) {
+  Widget _sectionPictureLogo(String url) {
     return Container(
       padding: const EdgeInsets.fromLTRB(25.0, 25.0, 25.0, 5.0),
       child: Image.asset(
@@ -68,5 +69,19 @@ class AboutUs extends StatelessWidget {
         fit: BoxFit.none,
       ),
     );
+  }
+
+  Widget _sectionPicture(String url) {
+    return Container(
+        width: 300,
+        height: 300,
+        padding: const EdgeInsets.fromLTRB(25.0, 25.0, 25.0, 5.0),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(10.0),
+          child: Image.asset(
+            url,
+            fit: BoxFit.contain,
+          ),
+        ));
   }
 }

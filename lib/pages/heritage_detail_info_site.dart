@@ -9,13 +9,52 @@ class HeritageDetailInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: Container(
         child: Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        _bannerImage(heritage.urlDetail, 200.0),
+        SingleChildScrollView(
+          child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: _renderBody(context, heritage)),
-      ),
-    );
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                  flex: 6,
+                  child: Material(
+                    elevation: 2.0,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        _sectionTitle(getTranslated(context, heritage.title1)),
+                        _sectionText(getTranslated(context, heritage.text1)),
+                        _sectionTitle(
+                            getTranslated(context, "didyouknow_title")),
+                        Column(
+                          children: <Widget>[
+                            _sectionListTile(
+                                getTranslated(context, heritage.text2)),
+                            _sectionListTile(
+                                getTranslated(context, heritage.text3))
+                          ],
+                        ),
+                      ],
+                    ),
+                  )),
+              Expanded(
+                  flex: 4,
+                  child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        _sectionPicture(heritage.urlQR),
+                      ]))
+            ],
+          ),
+        ),
+      ],
+    ));
   }
 
   Widget _sectionTitle(String text) {
@@ -27,7 +66,7 @@ class HeritageDetailInfo extends StatelessWidget {
 
   Widget _sectionText(String text) {
     return Container(
-        padding: EdgeInsets.fromLTRB(25.0, 15.0, 500.0, 15.0),
+        padding: EdgeInsets.fromLTRB(25.0, 15.0, 25.0, 15.0),
         child: Text(
           text,
           style: Styles.textText,
@@ -37,7 +76,7 @@ class HeritageDetailInfo extends StatelessWidget {
 
   Widget _sectionListTile(String text) {
     return Container(
-      padding: EdgeInsets.fromLTRB(25.0, 15.0, 500.0, 15.0),
+      padding: EdgeInsets.fromLTRB(25.0, 15.0, 25.0, 15.0),
       child: ListTile(
         leading: Text(
           "\u2022",
@@ -58,6 +97,20 @@ class HeritageDetailInfo extends StatelessWidget {
       constraints: BoxConstraints.tightFor(height: height),
       child: Image.asset(url, fit: BoxFit.fitWidth),
     );
+  }
+
+  Widget _sectionPicture(String url) {
+    return Container(
+        width: 300,
+        height: 300,
+        padding: const EdgeInsets.fromLTRB(25.0, 25.0, 25.0, 5.0),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(10.0),
+          child: Image.asset(
+            url,
+            fit: BoxFit.contain,
+          ),
+        ));
   }
 
   List<Widget> _renderBody(BuildContext context, Heritage heritage) {

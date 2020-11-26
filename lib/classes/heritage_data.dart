@@ -15,6 +15,7 @@ class HeritageData extends Heritage {
         titlePopUp: "title_bellinzona",
         textPopUp: "since_bellinzona",
         urlPopUp: "assets/images/headers/Castelgrande2.jpg",
+        urlQR: "assets/images/qr/bellinzona.png",
         heritageGallery: <String>[
           "assets/images/heritage/bellinzona1.jpg",
           "assets/images/heritage/bellinzona2.jpg",
@@ -34,6 +35,7 @@ class HeritageData extends Heritage {
         titlePopUp: "title_bahn",
         textPopUp: "since_bahn",
         urlPopUp: "assets/images/headers/bahn.jpg",
+        urlQR: "assets/images/qr/bahn.png",
         heritageGallery: <String>[
           "assets/images/heritage/bahn1.jpg",
           "assets/images/heritage/bahn2.jpg",
@@ -56,6 +58,7 @@ class HeritageData extends Heritage {
         titlePopUp: "title_bern",
         textPopUp: "since_bern",
         urlPopUp: "assets/images/headers/bern.jpg",
+        urlQR: "assets/images/qr/bern.png",
         heritageGallery: <String>[
           "assets/images/heritage/bern1.jpg",
           "assets/images/heritage/bern2.jpg",
@@ -74,6 +77,7 @@ class HeritageData extends Heritage {
         titlePopUp: "title_chaux",
         textPopUp: "since_chaux",
         urlPopUp: "assets/images/headers/la_chaux_de_fonds.jpg",
+        urlQR: "assets/images/qr/chaux.png",
         heritageGallery: <String>[
           "assets/images/heritage/chaux1.jpg",
           "assets/images/heritage/chaux2.jpg",
@@ -93,6 +97,7 @@ class HeritageData extends Heritage {
         titlePopUp: "title_corbusier",
         textPopUp: "since_corbusier",
         urlPopUp: "assets/images/headers/le_corbusier.jpg",
+        urlQR: "assets/images/qr/corbusier.png",
         heritageGallery: <String>[
           "assets/images/heritage/corbusier1.jpg",
           "assets/images/heritage/corbusier2.jpg",
@@ -113,6 +118,7 @@ class HeritageData extends Heritage {
         titlePopUp: "title_alpen",
         textPopUp: "since_alpen",
         urlPopUp: "assets/images/headers/aletsch.jpg",
+        urlQR: "assets/images/qr/alpen.png",
         heritageGallery: <String>[
           "assets/images/heritage/alps1.jpg",
           "assets/images/heritage/alps2.jpg",
@@ -136,6 +142,7 @@ class HeritageData extends Heritage {
         titlePopUp: "title_lavaux",
         textPopUp: "since_lavaux",
         urlPopUp: "assets/images/headers/lavaux.jpg",
+        urlQR: "assets/images/qr/lavaux.png",
         heritageGallery: <String>[
           "assets/images/heritage/lavaux1.jpg",
           "assets/images/heritage/lavaux2.jpg",
@@ -155,6 +162,7 @@ class HeritageData extends Heritage {
         titlePopUp: "title_mustair",
         textPopUp: "since_mustair",
         urlPopUp: "assets/images/headers/mustair.jpg",
+        urlQR: "assets/images/qr/mustair.png",
         heritageGallery: <String>[
           "assets/images/heritage/mustair1.jpg",
           "assets/images/heritage/mustair2.jpg",
@@ -174,6 +182,7 @@ class HeritageData extends Heritage {
         titlePopUp: "title_pfahlbauten",
         textPopUp: "since_pfahlbauten",
         urlPopUp: "assets/images/headers/pfahlbauten.jpg",
+        urlQR: "assets/images/qr/pfahlbauten.png",
         heritageGallery: <String>[
           "assets/images/heritage/pfahlbauten1.jpg",
           "assets/images/heritage/pfahlbauten2.jpg",
@@ -197,6 +206,7 @@ class HeritageData extends Heritage {
         titlePopUp: "title_monte",
         textPopUp: "since_monte",
         urlPopUp: "assets/images/headers/monte.jpg",
+        urlQR: "assets/images/qr/monte.png",
         heritageGallery: <String>[
           "assets/images/heritage/monte1.jpg",
           "assets/images/heritage/monte2.jpg",
@@ -220,6 +230,7 @@ class HeritageData extends Heritage {
         titlePopUp: "title_arena",
         textPopUp: "since_arena",
         urlPopUp: "assets/images/headers/arena.jpg",
+        urlQR: "assets/images/qr/arena.png",
         heritageGallery: <String>[
           "assets/images/heritage/sardona1.jpg",
           "assets/images/heritage/sardona2.jpg",
@@ -243,6 +254,7 @@ class HeritageData extends Heritage {
         titlePopUp: "title_gallen",
         textPopUp: "since_gallen",
         urlPopUp: "assets/images/headers/st_gallen.jpg",
+        urlQR: "assets/images/qr/st_gallen.png",
         heritageGallery: <String>[
           "assets/images/heritage/stgallen1.jpg",
           "assets/images/heritage/stgallen2.jpg",
