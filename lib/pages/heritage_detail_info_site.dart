@@ -102,13 +102,13 @@ class HeritageDetailInfo extends StatelessWidget {
   Widget _sectionPicture(String url) {
     return Container(
         width: 300,
-        height: 300,
+        height: 280,
         padding: const EdgeInsets.fromLTRB(25.0, 25.0, 25.0, 5.0),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(10.0),
           child: Image.asset(
             url,
-            fit: BoxFit.contain,
+            fit: BoxFit.fill,
           ),
         ));
   }
