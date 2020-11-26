@@ -16,7 +16,7 @@ class GetJson extends StatelessWidget {
   Widget build(BuildContext context) {
     Locale myLocale = Localizations.localeOf(context);
     String assettoload;
-
+// checking the set language locale and loading the file with questions
     setasset() {
       if (myLocale.languageCode == "en") {
         assettoload = "assets/questions/english_q.json";
@@ -71,7 +71,7 @@ class _QuizState extends State<Quiz> {
   int j = 1;
   int timer = 30;
   String showtimer = "30";
-  var randomArray;
+  List<int> randomArray = [];
 
   Map<String, Color> btncolor = {
     "a": Styles.buttonColor,
@@ -83,11 +83,11 @@ class _QuizState extends State<Quiz> {
   bool canceltimer = false;
 
   genRandomArray() {
-    var rand = new Random();
-    for (i = rand.nextInt(25) + 1;;) {
-      var list = new List<int>.generate(26, (int index) => index);
+    for (int i = 0;;) {
+      var list =
+          new List<int>.generate(26, (int index) => index + 1, growable: true);
       list.shuffle();
-      randomArray = list.toSet().toList();
+      randomArray = list;
       if (randomArray.length < 5) {
         continue;
       } else {
@@ -101,6 +101,8 @@ class _QuizState extends State<Quiz> {
   void initState() {
     starttimer();
     genRandomArray();
+    // initialize that i is the first index of randomArray
+    i = randomArray[0];
     super.initState();
   }
 
@@ -266,6 +268,7 @@ class _QuizState extends State<Quiz> {
             mydata[1][i.toString()][k],
             style: Styles.textButtonRaised,
             maxLines: 2,
+            textAlign: TextAlign.center,
           ),
           color: btncolor[k],
           splashColor: Styles.tileHoverColor,
