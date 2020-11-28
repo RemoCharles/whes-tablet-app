@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:convert';
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -83,6 +82,7 @@ class _QuizState extends State<Quiz> {
   bool canceltimer = false;
 
   genRandomArray() {
+    // ignore: unused_local_variable
     for (int i = 0;;) {
       var list =
           new List<int>.generate(26, (int index) => index + 1, growable: true);

@@ -41,6 +41,7 @@ class _HeritageDetailState extends State<HeritageDetail> {
                 icon: new Icon(
                   Icons.info,
                 ),
+                // ignore: deprecated_member_use
                 title: new Text(
                   "Info",
                   style: Styles.textTab,
@@ -49,6 +50,7 @@ class _HeritageDetailState extends State<HeritageDetail> {
                 icon: new Icon(
                   Icons.image,
                 ),
+                // ignore: deprecated_member_use
                 title: new Text(getTranslated(context, "gallery_tab"),
                     style: Styles.textTab))
           ]),
