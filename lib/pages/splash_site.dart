@@ -26,8 +26,23 @@ class _SplashscreenState extends State<Splashscreen> {
     return Scaffold(
       backgroundColor: Styles.PrimaryColor,
       body: Center(
-          child: CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Styles.progressColor))),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              padding: const EdgeInsets.fromLTRB(50.0, 50.0, 50.0, 50.0),
+              child: Image.asset("assets/images/WHES_Website_Logo.png",
+                  fit: BoxFit.none),
+              alignment: Alignment.center,
+            ),
+            Container(
+                child: CircularProgressIndicator(
+                    valueColor:
+                        AlwaysStoppedAnimation<Color>(Styles.progressColor))),
+          ],
+        ),
+      ),
     );
   }
 }

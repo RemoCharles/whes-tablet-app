@@ -43,13 +43,14 @@ class _MyAppState extends State<MyApp> {
       return Container(
         child: Center(
           child: CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.red[800])),
+              backgroundColor: Styles.PrimaryColor,
+              valueColor: AlwaysStoppedAnimation<Color>(Styles.progressColor)),
         ),
       );
     } else {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: "WHES TABLET APP",
+        title: "WHES TABLET",
         theme: ThemeData(
             appBarTheme: AppBarTheme(
               iconTheme: Styles.iconThemeColor,
