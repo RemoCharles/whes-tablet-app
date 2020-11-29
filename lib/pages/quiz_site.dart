@@ -177,6 +177,13 @@ class _QuizState extends State<Quiz> {
         [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
     return WillPopScope(
         child: Scaffold(
+          appBar: AppBar(
+              title: Text(
+            getTranslated(context, "quiz_question1") +
+                j.toString() +
+                getTranslated(context, "quiz_question2"),
+            style: Styles.textTitle,
+          )),
           body: Column(
             children: <Widget>[
               _questionImage(mydata[3][i.toString()]),

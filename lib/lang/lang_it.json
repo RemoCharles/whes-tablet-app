@@ -109,6 +109,8 @@
     "quiz_start_text" : "Nel seguente quiz potete dimostrare le vostre conoscenze sui siti del patrimonio mondiale dell'UNESCO in Svizzera. Ci sono 5 domande con 4 possibili risposte ciascuna. Tuttavia, solo una risposta è corretta. Attenzione: ogni domanda ha un timer di 30 secondi. Quando il timer scade, la domanda successiva continuerà.",
     "quiz_start_button" : "Inizia il quiz",
     "quiz_start_title_small" : "Info sul quiz",
+    "quiz_question1" : "Domanda ",
+    "quiz_question2" : " di 5",
 
     "button_quiz_title" : "Quiz",
     "button_quiz_text" : "Vuoi finire il quiz?\nIl progresso non viene salvato.",

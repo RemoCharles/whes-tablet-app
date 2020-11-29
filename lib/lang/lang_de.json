@@ -109,7 +109,9 @@
 
     "quiz_start_text" : "In folgendem Quiz kannst du dein Wissen über die UNESCO Welterben der Schweiz unter Beweis stellen. Es sind 5 Fragen mit jeweils 4 möglichen Antworten. Es ist jedoch nur eine Antwort korrekt. Achtung: Jede Frage hat einen Timer von 30 Sekunden. Wenn der Timer ausläuft, geht es weiter mit der nächsten Frage.",
     "quiz_start_button" : "Starte das Quiz",
-    "quiz_start_title_small" : "Kurze Info zum Quiz",
+    "quiz_start_title_small" : "Info zum Quiz",
+    "quiz_question1" : "Frage ",
+    "quiz_question2" : " von 5",
 
     "button_quiz_title" : "Quiz",
     "button_quiz_text" : "Möchten Sie das Quiz beenden?\nDer Fortschritt wird nicht gespeichert.",
