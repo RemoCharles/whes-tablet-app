@@ -1,80 +1,80 @@
 [
     {
-        "1": "Wie viele UNESCO-Welterbestätten gibt es insgesamt in der Schweiz?",
-        "2": "Wobei handelt es sich nicht um ein Welterbe?",
-        "3": "Welches berühmte Wahrzeichen liegt mitten in der Berner Altstadt?",
-        "4": "Welcher Fluss umgibt die Altstadt von Bern?",
-        "5": "Was war der ausschlaggebende Grund für die Aufnahme des Klosters St. Johann in Müstair auf die Welterbe-Liste?",
-        "6": "Wer lebt heute im Benediktinerinnen-Kloster St. Johann in Müstair?",
-        "7": "Wie viele Bücher lagern heute noch im Stiftsbezirk St.Gallen?",
-        "8": "Wer soll der Legende nach, den Grundstein für das Kloster St.Gallen gelegt haben?",
-        "9": "Wie viele Burgen stehen in Bellinzona?",
-        "10": "Wozu wurden die Burgen von Bellinzona einst errichtet?",
-        "11": "Wie lange ist der grosse Aletschgletscher?",
-        "12": "Welcher dieser Berge befindet sich im Welterbe Swiss Alps Jungfrau-Aletsch?",
-        "13": "Was ist der Monte San Giorgio?",
-        "14": "Weshalb wurde der Monte San Giorgio zum UNESCO-Weltnaturerbe ausgezeichnet?",
-        "15": "Was kann man in der Tektonikarena Sardona besonders gut sehen?",
-        "16": "Was ist das Martinsloch?",
-        "17": "Welches ist die Königsrebsorte des Lavaux?",
-        "18": "Wann wurde mit dem Weinanbau im Lavaux begonnen?",
-        "19": "Welche Strecke der Rhätischen Bahn wurde zum UNESCO-Welterbe ausgezeichnet?",
-        "20": "Welches bekannte Viadukt überquert die Rhätische Bahn bei Filisur?",
-        "21": "Welche Industrie ist in La Chaux-de-Fonds und Le Locle beheimatet?",
-        "22": "Wie viele der weltweit hergestellten Uhren wurden um das Jahr 1900 in La Chaux-de-Fonds und Le Locle hergestellt?",
-        "23": "Wo werden die meisten Siedlungsreste der Pfahlbauten gefunden?",
-        "24": "Weshalb sind die Funde der Pfahlbauer über all die Jahre so gut erhalten geblieben?",
-        "25": "Wo wurde Le Corbusier ursprünglich geboren?",
-        "26": "Welchen Beruf übte Charles-Édouard Jeanneret-Gris (bekannt unter dem Namen «Le Corbusier») aus?"
+        "1": "Quanti beni del Patrimonio mondiale dell'UNESCO si contano in Svizzera?",
+        "2": "Quale di questi non è Patrimonio mondiale dell’UNESCO?",
+        "3": "Qual è il famoso monumento nel cuore della città vecchia di Berna?",
+        "4": "Quale fiume circonda la città vecchia di Berna?",
+        "5": "Qual è stato il motivo decisivo per l'iscrizione del convento di San Giovanni a Müstair nella Lista del Patrimonio mondiale?",
+        "6": "Chi vive oggi nel convento benedettino di San Giovanni a Müstair?",
+        "7": "Quanti libri sono ancora oggi conservati nell’Abbazia di San Gallo?",
+        "8": "Chi, secondo la leggenda, ha posto la prima pietra del complesso monastico di San Gallo?",
+        "9": "Quanti castelli ci sono a Bellinzona?",
+        "10": "A quale scopo sono stati costruiti i castelli di Bellinzona?",
+        "11": "Quanto è lungo il grande ghiacciaio dell'Aletsch?",
+        "12": "Quale di queste montagne fa parte del Patrimonio mondiale Swiss Alps Jungfrau-Aletsch?",
+        "13": "Cos'è il Monte San Giorgio?",
+        "14": "Perché il Monte San Giorgio è stato inserito nella Lista del Patrimonio mondiale dell'UNESCO?",
+        "15": "Cosa si può vedere particolarmente bene nell'Arena tettonica svizzera Sardona?",
+        "16": "Cos'è il \"Martinsloch\"?",
+        "17": "Qual è il vitigno principe del Lavaux?",
+        "18": "Quando è iniziata la cultura del vino a Lavaux?",
+        "19": "Quale linea della Ferrovia retica è stata dichiarata Patrimonio mondiale dall'UNESCO?",
+        "20": "Quale famoso viadotto attraversa la Ferrovia Retica a Filisur?",
+        "21": "Qual è il settore più importante a La Chaux-de-Fonds e Le Locle?",
+        "22": "Quanti orologi al mondo sono stati prodotti a La Chaux-de-Fonds e Le Locle intorno al 1900?",
+        "23": "Dove si trovano la maggior parte dei resti dei siti palafitticoli?",
+        "24": "Perché i resti delle palafitte sono stati così ben conservati in tutti questi anni?",
+        "25": "Dov'è nato Le Corbusier?",
+        "26": "Qual era la professione di Charles-Edouard Jeanneret (noto come \"Le Corbusier\")?"
     },
     {
         "1": {
-            "a": "Keine",
+            "a": "Nessuno",
             "b": "3",
             "c": "12",
             "d": "54"
         },
         "2": {
-            "a": "Matterhorn",
-            "b": "Altstadt von Bern",
-            "c": "Stiftsbezirk von St. Gallen",
-            "d": "Kloster St. Johann in Müstair"
+            "a": "Il Cervino",
+            "b": "Il centro storico di Berna",
+            "c": "L’Abbazia di San Gallo",
+            "d": "Il Convento di San Giovanni a Müstair"
         },
         "3": {
             "a": "Big Ben",
             "b": "Zytglogge",
             "c": "Fraumünster",
-            "d": "Burgturm La Tour-de-Trême"
+            "d": "Torre del castello \" La Tour-de-Trême \""
         },
         "4": {
-            "a": "Aare",
-            "b": "Reuss",
-            "c": "Rhone",
-            "d": "Limmat"
+            "a": "L'Aare",
+            "b": "La Reuss",
+            "c": "Il Rodano",
+            "d": "La Limmat"
         },
         "5": {
-            "a": "Grabstätte aus dem Mittelalter",
-            "b": "Höchster Kirchturm der Welt",
-            "c": "Ältestes Kloster der Schweiz",
-            "d": "Einzigartige Wandmalereien in der Klosterkirche"
+            "a": "Luogo di sepoltura del Medioevo",
+            "b": "Il campanile più alto del mondo",
+            "c": "Il monastero più vecchio della Svizzera",
+            "d": "Dipinti murali unici nella chiesa del monastero"
         },
         "6": {
-            "a": "Mönche",
-            "b": "Nonnen",
-            "c": "Pfarrer der Gemeinde",
-            "d": "Internatschüler"
+            "a": "Monaci",
+            "b": "Suore",
+            "c": "Il prete del comune",
+            "d": "Studenti residenziali"
         },
         "7": {
-            "a": "Keine mehr",
+            "a": "Nessuno",
             "b": "200",
             "c": "15'000",
             "d": "170'000"
         },
         "8": {
-            "a": "Wohlhabende St.Galler Familie",
-            "b": "Papst",
-            "c": "Wandermönch Gallus",
-            "d": "Erzbischof von Canterbury"
+            "a": "Una ricca famiglia di San Gallo",
+            "b": "Il Papa",
+            "c": "Gallo, un monaco errante",
+            "d": "L'arcivescovo di Canterbury"
         },
         "9": {
             "a": "1",
@@ -83,10 +83,10 @@
             "d": "7"
         },
         "10": {
-            "a": "Abwehr gegen die Eidgenossen",
-            "b": "Wohnsitz von Karl dem Grossen",
-            "c": "Aussichtsterrasse für wohlhabende Familien",
-            "d": "Gefängnisanlage für italienische Straftäter"
+            "a": "Difesa contro i Confederati svizzeri",
+            "b": "Residenza di Carlo Magno",
+            "c": "Terrazza panoramica per famiglie facoltose",
+            "d": "Istituto penitenziario per i trasgressori italiani"
         },
         "11": {
             "a": "200 m",
@@ -95,34 +95,34 @@
             "d": "67 km"
         },
         "12": {
-            "a": "Dufourspitze (4634 m.ü.M.)",
-            "b": "Finsteraarhorn (4274 m.ü.M.)",
-            "c": "Piz Bernina (4048 m.ü.M.)",
-            "d": "Zinalrothorn (4221m.ü.M.)"
+            "a": "La Punta Dufour (4634 m)",
+            "b": "Finsteraarhorn (4274 m)",
+            "c": "Piz Bernina (4048 m)",
+            "d": "Zinalrothorn (4221 m)"
         },
         "13": {
-            "a": "Eine sich drehende Bergbahn",
-            "b": "Eine spezielle Rebsorte, die nur im Tessin gedeiht",
-            "c": "Ein Berg im Südtessin",
-            "d": "Ein Saurierskelett, das im Tessin gefunden wurde"
+            "a": "Una ferrovia di montagna girevole",
+            "b": "Un vitigno unico che si trova solo in Ticino",
+            "c": "Una montagna nel Ticino meridionale",
+            "d": "Uno scheletro di dinosauro trovato in Ticino"
         },
         "14": {
-            "a": "Aufgrund von rund 240 Mio. Jahre alten Fossilien",
-            "b": "Aufgrund der einmaligen Aussicht auf den Lago di Lugano",
-            "c": "Aufgrund der reichen Vegetation",
-            "d": "Aufgrund seines pyramidenförmigen Aussehens"
+            "a": "A causa di fossili risalenti a circa 240 milioni di anni fa",
+            "b": "Grazie alla vista unica sul Lago di Lugano",
+            "c": "A causa della ricca vegetazione",
+            "d": "Per il suo aspetto piramidale"
         },
         "15": {
-            "a": "Wie die Berge entstanden sind",
-            "b": "Wie sich Steinböcke im Hochgebirge verhalten",
-            "c": "Wie Ritter im Mittelalter gelebt haben",
-            "d": "Wie Häuser vor 1500 Jahren gebaut wurden"
+            "a": "Come si sono formate le montagne",
+            "b": "Come si comportano gli stambecchi in alta montagna",
+            "c": "Come vivevano i cavalieri nel Medioevo",
+            "d": "Come sono state costruite le case 1500 anni fa"
         },
         "16": {
-            "a": "Ein Bohrloch aus dem zweiten Weltkrieg",
-            "b": "Ein geheimnisvoller Schnaps, der im Berginneren gebrannt wird",
-            "c": "Ein unterirdischer Gang von Elm nach Flims",
-            "d": "Ein ca. 19x22m grosses Loch im Felsen bei Elm"
+            "a": "Un pozzo di trivellazione della seconda guerra mondiale",
+            "b": "Un misterioso liquore distillato all'interno della montagna",
+            "c": "Un sottopassaggio da Elm a Flims",
+            "d": "Un’apertura di circa 19x22 m nella roccia sopra a Elm"
         },
         "17": {
             "a": "Primitivo",
@@ -131,87 +131,87 @@
             "d": "Fendant"
         },
         "18": {
-            "a": "1000 v.Chr.",
-            "b": "11. Jahrhundert",
-            "c": "19. Jahrhundert",
-            "d": "2007"
+            "a": "1000 A.C.",
+            "b": "Nell'XI secolo",
+            "c": "Nel XIX secolo",
+            "d": "Nel 2007"
         },
         "19": {
             "a": "Thusis – Tirano",
             "b": "Landquart – Davos",
-            "c": "Chur – Scuol",
-            "d": "Zürich – Bern"
+            "c": "Coira – Scuol",
+            "d": "Zurigo – Berna"
         },
         "20": {
-            "a": "Lorzentobelbrücke",
-            "b": "Negrelli-Viadukt",
-            "c": "Ravennabrücke",
-            "d": "Landwasserviadukt"
+            "a": "Il ponte Lorzentobel",
+            "b": "Il viadotto Negrelli",
+            "c": "Il Ponte di Ravenna",
+            "d": "Il viadotto Landwasser"
         },
         "21": {
-            "a": "Autoindustrie",
-            "b": "Uhrenindustrie",
-            "c": "Softwareindustrie",
-            "d": "Finanzindustrie"
+            "a": "L'industria automobilistica",
+            "b": "L'industria orologiera",
+            "c": "L'industria del software",
+            "d": "Il settore finanziario"
         },
         "22": {
-            "a": "Ca. 1%",
-            "b": "Ca. 20%",
-            "c": "Mehr als 50%",
+            "a": "Circa l'1%.",
+            "b": "Circa il 20%.",
+            "c": "Oltre il 50%",
             "d": "100%"
         },
         "23": {
-            "a": "Bei Seen und Mooren",
-            "b": "In der Nähe von mittelgrossen Städten",
-            "c": "Auf Bergspitzen",
-            "d": "In dicht bewaldeten Gebieten"
+            "a": "Sulle rive di laghi e paludi",
+            "b": "Vicino a città di medie dimensioni",
+            "c": "In cima alle montagne",
+            "d": "In aree densamente boscose"
         },
         "24": {
-            "a": "Die Pfahlbauer haben viele Schätze in steinernen Truhen aufbewahrt",
-            "b": "Aufgrund der hervorragenden Erhaltungsbedingungen im feuchten Boden",
-            "c": "Aufgrund der Gefrierung vieler Objekte auf den Bergspitzen und Gletscher",
-            "d": "Das hat die Wissenschaft bis heute nicht herausgefunden"
+            "a": "Gli abitanti delle palafitte hanno conservato molti tesori in casse di pietra.",
+            "b": "Grazie alle eccellenti condizioni di conservazione nel terreno umido",
+            "c": "A causa del congelamento di molti oggetti sulle cime delle montagne e nei ghiacciai",
+            "d": "La scienza non ha ancora trovato una spiegazione"
         },
         "25": {
-            "a": "In Paris (Frankreich)",
-            "b": "In Neapel (Italien)",
-            "c": "In La Chaux-de-Fonds (Schweiz)",
-            "d": "In Buenos Aires (Argentien)"
+            "a": "A Parigi (Francia)",
+            "b": "A Napoli (Italia)",
+            "c": "A La Chaux-de-Fonds (Svizzera)",
+            "d": "A Buenos Aires (Argentina)"
         },
         "26": {
-            "a": "Architekt",
-            "b": "Arzt",
-            "c": "Priester",
-            "d": "Physiker"
+            "a": "Architetto",
+            "b": "Dottore",
+            "c": "Sacerdote",
+            "d": "Fisico"
         }
     },
     {
         "1": "12",
-        "2": "Matterhorn",
+        "2": "Il Cervino",
         "3": "Zytglogge",
-        "4": "Aare",
-        "5": "Einzigartige Wandmalereien in der Klosterkirche",
-        "6": "Mönche",
+        "4": "L'Aare",
+        "5": "Dipinti murali unici nella chiesa del monastero",
+        "6": "Suore",
         "7": "170'000",
-        "8": "Wandermönch Gallus",
+        "8": "Gallo, un monaco errante",
         "9": "3",
-        "10": "Abwehr gegen die Eidgenossen",
+        "10": "Difesa contro i Confederati svizzeri",
         "11": "23 km",
-        "12": "Finsteraarhorn (4274 m.ü.M.)",
-        "13": "Ein Berg im Südtessin",
-        "14": "Aufgrund von rund 240 Mio. Jahre alten Fossilien",
-        "15": "Wie die Berge entstanden sind",
-        "16": "Ein ca. 19x22m grosses Loch im Felsen bei Elm",
+        "12": "Finsteraarhorn (4274 m)",
+        "13": "Una montagna nel Ticino meridionale",
+        "14": "A causa di fossili risalenti a circa 240 milioni di anni fa",
+        "15": "Come si sono formate le montagne",
+        "16": "Un’apertura di circa 19x22 m nella roccia sopra a Elm",
         "17": "Chasselas",
-        "18": "11. Jahrhundert",
+        "18": "Nell'XI secolo",
         "19": "Thusis – Tirano",
-        "20": "Landwasserviadukt",
-        "21": "Uhrenindustrie",
-        "22": "Mehr als 50%",
-        "23": "Bei Seen und Mooren",
-        "24": "Aufgrund der hervorragenden Erhaltungsbedingungen im feuchten Boden",
-        "25": "In La Chaux-de-Fonds (Schweiz)",
-        "26": "Architekt"
+        "20": "Il viadotto Landwasser",
+        "21": "L'industria orologiera",
+        "22": "Oltre il 50%",
+        "23": "Sulle rive di laghi e paludi",
+        "24": "Grazie alle eccellenti condizioni di conservazione nel terreno umido",
+        "25": "A La Chaux-de-Fonds (Svizzera)",
+        "26": "Architetto"
     },
     {
         "1": "assets/images/headers/default.jpg",
