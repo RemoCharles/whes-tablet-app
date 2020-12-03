@@ -23,20 +23,29 @@ class IndexSite extends StatefulWidget {
 class _IndexSiteState extends State<IndexSite> {
   final GlobalKey<FormState> key = GlobalKey<FormState>();
 
-  Image indexBackground;
+  Image indexBackgroundDe;
+  Image indexBackgroundFr;
+  Image indexBackgroundIt;
+  Image indexBackgroundEn;
   Image drawerHeader;
 
   @override
   void initState() {
     super.initState();
-    indexBackground = Image.asset("assets/images/karte_schweiz.png");
+    indexBackgroundDe = Image.asset("assets/images/karte_schweiz_de.png");
+    indexBackgroundFr = Image.asset("assets/images/karte_schweiz_fr.png");
+    indexBackgroundIt = Image.asset("assets/images/karte_schweiz_it.png");
+    indexBackgroundEn = Image.asset("assets/images/karte_schweiz_en.png");
     drawerHeader = Image.asset("assets/images/WHES_Website_Logo.png");
   }
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    precacheImage(indexBackground.image, context);
+    precacheImage(indexBackgroundDe.image, context);
+    precacheImage(indexBackgroundFr.image, context);
+    precacheImage(indexBackgroundIt.image, context);
+    precacheImage(indexBackgroundEn.image, context);
     precacheImage(drawerHeader.image, context);
   }
 
@@ -161,7 +170,7 @@ class _IndexSiteState extends State<IndexSite> {
             color: Colors.white,
             image: DecorationImage(
               fit: BoxFit.cover,
-              image: indexBackground.image,
+              image: AssetImage(getTranslated(context, "indexBackground")),
             )),
         child: _iconContent());
   }
