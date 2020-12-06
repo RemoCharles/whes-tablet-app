@@ -4,4 +4,4 @@ A Flutter project done as a bachelor thesis. Android Tablet App for World Herita
 
 ## About
 
-More infos coming soon...
+
