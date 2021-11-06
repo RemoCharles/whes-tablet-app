@@ -15,6 +15,7 @@ class HeritageDetail extends StatefulWidget {
 
 class _HeritageDetailState extends State<HeritageDetail> {
   int _currentIndex = 0;
+  // ignore: deprecated_member_use
   List<Widget> _children = List<Widget>();
 
   @override

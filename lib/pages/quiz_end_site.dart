@@ -122,7 +122,7 @@ class _ResultState extends State<Result> {
       child: SizedBox(
         width: 200.0,
         height: 50.0,
-        child: RaisedButton(
+        child: ElevatedButton(
           child: Text(
             getTranslated(context, "quiz_again_button"),
             style: Styles.textButtonRaised,
@@ -131,11 +131,6 @@ class _ResultState extends State<Result> {
             Navigator.of(context).pushReplacement(
                 MaterialPageRoute(builder: (context) => QuizStart()));
           },
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(10.0)),
-          ),
-          color: Styles.buttonColor,
-          splashColor: Styles.tileHoverColor,
         ),
       ),
     );
@@ -148,7 +143,7 @@ class _ResultState extends State<Result> {
       child: SizedBox(
         width: 200.0,
         height: 50.0,
-        child: RaisedButton(
+        child: ElevatedButton(
           child: Text(
             getTranslated(context, "quiz_end_button"),
             style: Styles.textButtonRaised,
@@ -158,11 +153,6 @@ class _ResultState extends State<Result> {
                 builder: (context) =>
                     IndexSite(heritages: widget.heritageData)));
           },
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(10.0)),
-          ),
-          color: Styles.buttonColor,
-          splashColor: Styles.tileHoverColor,
         ),
       ),
     );
