@@ -35,6 +35,7 @@
     "title_pfahlbauten" : "Prähistorische Pfahlbauten um die Alpen",
     "title_gallen" : "Stiftsbezirk St.Gallen",
     "title_bern" : "Altstadt von Bern",
+    "title_buchenwaelder" : "Alte Buchenwälder und Buchenurwälder",
 
     "since_bellinzona" : "Weltkulturerbe seit 2000",
     "since_alpen" : "Weltnaturerbe seit 2001",
@@ -48,6 +49,7 @@
     "since_pfahlbauten" : "Weltkulturerbe seit 2011",
     "since_gallen" : "Weltkulturerbe seit 1983",
     "since_bern" : "Weltkulturerbe seit 1983",
+    "since_buchenwaelder" : "Weltnaturerbe seit 2021",
 
     "button_more" : "MEHR",
     "button_cancel" : "ZURÜCK",
@@ -66,6 +68,7 @@
     "title1_pfahlbauten" : "Einzigartige Zeitzeugen der Urgeschichte",
     "title1_gallen" : "1400 Jahre Kulturgeschichte",
     "title1_bern" : "Ein Gang durch Jahrhunderte",
+    "title1_buchenwaelder" : "Ungestörter, komplexer Wald",
 
     "text1_bellinzona" : "Gestern Talsperre zu den Alpen, heute Welterbe: Die drei imposanten Burgen von Bellinzona gehören zu den bedeutendsten Zeugen der mittelalterlichen Befestigungsbaukunst. Erbaut wurden sie von den Herzögen von Mailand, um den Schweizer Eidgenossen den Weg nach Süden zu versperren. Bellinzona befand sich bereits damals in einer strategischen Position zwischen Nord und Süd. Im Lauf der Jahrhunderte wurden die drei Burgen Castelgrande, Montebello und Sasso Corbaro mehrfach wiederaufgebaut und restauriert. Mit ihren Mauern, Türmen, Zinnen und Toren löst diese imposante Befestigungsanlage auch heute noch beim Betrachter Erstaunen aus.",
     "text1_alpen" : "Imposante Bergketten, urige Täler und das grösste zusammenhängend vergletscherte Gebiet der Alpen. Das Welterbe gehört zu den spektakulärsten Hochgebirgslandschaften der Welt und repräsentiert mit Eiger, Mönch und Jungfrau sowie dem grossen Aletschgletscher auf 824 km2 das Herz der Alpen. Die Region vereint die unterschiedlichsten Lebensräume vom Gletscher bis zur Steppe und zeigt die Auswirkungen des Klimawandels eindrücklich auf. Eine dementsprechend wichtige Rolle spielte die Landschaft in der europäischen Literatur, Kunst, dem Bergsteigen und dem alpinen Tourismus. Nur wenige andere Orte auf diesem Planeten können eine vergleichbare Vielfalt an Kontrasten und Kostbarkeiten bieten.",
@@ -79,6 +82,8 @@
     "text1_pfahlbauten" : "Die “Pfahlbauten” sind prähistorische Siedlungsreste in Seen und Mooren rund um die Alpen. Das Welterbe umfasst 111 Fundstellen in sechs Ländern (CH, D, F, I, SLO, A) - 56 davon befinden sich in der Schweiz. Die Funde organischer Materialien wie Holz, Textilien, pflanzliche Reste oder Knochen liefern faszinierende Einblicke in das Leben um 5000 bis 500 vor Christus. Viele Funde befinden sich heute schwer oder gar nicht zugänglich unter Wasser, an Seeufern oder in Sumpfgebieten. Umso wichtiger ist die Vermittlung in Museen, wie zum Beispiel im Laténium bei Neuchâtel, wo man einen detaillierten Einblick in das Leben unserer Vorfahren gewinnt.",
     "text1_gallen" : "Der Grundstein der Abtei legte 612 der irische Wandermönch Gallus. Gut 100 Jahre später belebte Abt Otmar den Stift und wandelte ihn zu einem bedeutenden Zentrum für Schreibtätigkeit und Buchmalerei. Auch heute noch ist der Geist der Benediktinermönche in den historisch beeindruckenden Gemäuern spürbar. Die Stiftsbibliothek - auch Seelenapotheke genannt - verfügt über den wohl schönsten Rokokosaal der Schweiz. Nebst den 170‘000 Büchern beherbergt sie einer der bedeutendsten autochthonen Handschriftensammlungen Europas aus dem Mittelalter. Hervorzuheben sind der St. Galler Klosterplan, das “Evangelium Longum”und den “Abrogans”, das älteste erhaltene Buch in deutscher Sprache.",
     "text1_bern" : "Die 1191 gegründete Stadt thront erhaben auf einer Halbinsel hoch über der Aare und zeugt noch heute vom grossartigen mittelalterlichen Städtebau Europas. Sie ist ein positives Beispiel dafür, wie eine mittelalterliche Stadtstruktur beibehalten und dennoch angepasst werden kann, um auch gegenwärtige Funktionen zu erfüllen. Die Schweizer Bundesstadt lädt mit imposanten geschlossenen Häuserzeilen, ihrer eindrücklichen Dachlandschaft, den Arkaden, Kellern, Türmen und Brunnen, die zu einem Grossteil in ihrer originalen Substanz erhalten geblieben sind, zum Gang durch die Jahrhunderte ein.",
+    "text1_buchenwaelder" : "Als häufigste Baumart in Mitteleuropa zeichnet sich die Buche durch ihre Anpassungsfähigkeit an unterschiedliche klimatische und geografische Bedingungen aus. Menschliche Eingriffe üben jedoch einen starken Druck auf die Buchenurwälder und alten Buchenwälder aus, sodass nur noch einige Reste übrig sind. Mit über 170-jährigen Bäumen und einer Gesamtfläche von mehr als 1000 Hektaren sind die beiden  Waldreservate in den Tälern Lodano, Busai und Soladino (TI) sowie auf dem Bettlachstock (SO) ein wertvolles genetisches Reservoir nicht nur für die Buche, sondern auch für zahlreiche assoziierte und von diesen Lebensräumen abhängige Tier- und Pflanzenarten. Die in die UNESCO-Welterbeliste aufgenommenen Schweizer Waldreservate sind Teil eines transnationalen Ensembles: 94 Buchenwälder in 18 Ländern bilden eine einzige Welterbestätte.",
+
 
     "didyouknow_title" : "Hast du gewusst?",
 
@@ -94,6 +99,7 @@
     "text2_pfahlbauten" : "Die ersten Umweltverschmutzungen ereigneten sich zur Zeit der Pfahlbauer vor über 5000 Jahren durch die gewaltige Rodung von Waldflächen für den Ackerbau.",
     "text2_gallen" : "333 Erklärungen zu typischen Klostergebäuden befinden sich auf dem berühmten St. Galler Klosterplan, der um das Jahr 825 entstand.",
     "text2_bern" : "Die farbigen Strassenschilder Berns (rot, grün, gelb, schwarz, weiss) stammen noch aus Napoleons Besatzungszeit. Sie wiesen den betrunkenen französischen Soldaten in der verwinkelten Altstadt den Weg nach Hause.",
+    "text2_buchenwaelder" : "",
 
     "text3_bellinzona" : "Während der eidgenössischen Besatzungszeit wurden die Burgen in Castello di Uri, Castello di Svitto und Castello di Unterwaldo umgenannt.",
     "text3_alpen" : "Würde man den Grossen Aletschgletscher abschmelzen, könnte die gesamte Erdbevölkerung während 4,5 Jahren jeden Tag mit einem Liter Wasser versorgt werden.",
@@ -107,6 +113,7 @@
     "text3_pfahlbauten" : "An den Ufern unserer Seen trug die Bevölkerung der Jungsteinzeit zur weltweiten Verbreitung des Weizens bei, dessen Anbaufläche heute über 2,25 Millionen km2 beträgt.",
     "text3_gallen" : "Die um das Jahr 800 hergestellte Alkuin-Bibel hat 840 Seiten und wiegt ca. 20 kg.",
     "text3_bern" : "Albert Einstein schuf in Bern seine berühmte Relativitätstheorie.",
+    "text3_buchenwaelder" : "",
 
 
     "quiz_start_text" : "In folgendem Quiz kannst du dein Wissen über die UNESCO Welterben der Schweiz unter Beweis stellen. Es sind 5 Fragen mit jeweils 4 möglichen Antworten. Es ist jedoch nur eine Antwort korrekt. Achtung: Jede Frage hat einen Timer von 30 Sekunden. Wenn der Timer ausläuft, geht es weiter mit der nächsten Frage.",

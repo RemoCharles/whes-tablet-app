@@ -35,6 +35,7 @@
     "title_pfahlbauten" : "Prehistoric Pile Dwellings around the Alps",
     "title_gallen" : "Abbey of St. Gall",
     "title_bern" : "Old City of Bern",
+    "title_buchenwaelder" : "Ancient primeval beech forests",
 
     "since_bellinzona" : "Cultural Heritage since 2000",
     "since_alpen" : "Natural Heritage since 2001",
@@ -48,6 +49,7 @@
     "since_pfahlbauten" : "Cultural Heritage since 2011",
     "since_gallen" : "Cultural Heritage since 1983",
     "since_bern" : "Cultural Heritage since 1983",
+    "since_buchenwaelder" : "Natural Heritage since 2021",
 
     "button_more" : "MORE",
     "button_cancel" : "BACK",
@@ -66,6 +68,7 @@
     "title1_pfahlbauten" : "Unique witnesses of prehistory",
     "title1_gallen" : "1400 years of cultural history",
     "title1_bern" : "A tour through the centuries",
+    "title1_buchenwaelder" : "Unspoilt, complex forest",
 
     "text1_bellinzona" : "Once acting as a barrage to the Alps and now a World Heritage property, the three impressive castles of Bellinzona are among the most significant examples of medieval military architecture. They were built by the Dukes of Milan to bar the route southwards to the Swiss. Bellinzona occupied a strategic position between north and south back then too. Over the course of the centuries, the three castles of Castelgrande, Montebello and Sasso Corbaro have been reconstructed and restored many times. With its walls, towers, battlements and gates, this impressive defensive complex remains a source of wonder to those who view it today.",
     "text1_alpen" : "Impressive mountain chains, quaint valleys and the largest connected glaciated area in the Alps. The World Heritage site is one of the most spectacular high-mountain landscapes in the world. It represents the heart of the Alps with the Eiger, Mönch and Jungfrau as well as the huge 824 km2 Aletsch glacier. The region brings together the most diverse habitats from glacier to steppe, and gives a clear view of the effects of climate change. The countryside has played just as important a role in European literature, art, mountain climbing and alpine tourism. Few other places on this planet could offer a comparable variety of contrasts and treasures.",
@@ -79,6 +82,7 @@
     "text1_pfahlbauten" : "The “pile dwellings” are remains of prehistoric settlements in lakes and moors around the Alps. The serial property includes 111 sites in six countries (CH, D, F, I, SLO, A) and 56 of them are located in Switzerland. The artefacts – organic materials such as wood, textiles, plant remains and bones provide fascinating insights into life around 5,000 to 500 B.C. Many finds are difficult or impossible to access as they are underwater, on the shores of lakes or in marsh areas. This makes their exhibition in museums even more important, such as at the Laténium near Neuchâtel, where you can gain a detailed impression of the lives our ancestors led.",
     "text1_gallen" : "The foundation stone for the abbey was laid in 612 by the Irish itinerant monk Gallus. A good 100 years later, Abbot Otmar revived the monastery and transformed it into an important centre for writing activities and book illumination. The spirit of the Benedictine monks can still be felt in the historically impressive ruins today. The Abbey Library of St Gall, also known as the pharmacy of the soul, has what must be one of the most attractive rococo halls in Switzerland. Besides the 170,000 books, it also accommodates one of the most important autochthonous collections of medieval manuscripts in Europe. The Plan of St. Gall, the “Evangelium Longum” and the oldest conserved German language book, the “Abrogans”, are particularly worthy of note.",
     "text1_bern" : "The city, founded in 1191, is enthroned on a peninsula high above the Aare and still bears witness today to the ambitious scale of urban development in medieval Europe. It is a positive example of how a medieval city structure can be retained and yet adapted to also meet contemporary requirements. With its impressive closed rows of houses, its attractive roof landscape, arcades, cellars, towers and fountains, which have largely retained their original form, the federal capital city invites you to go on a tour through the centuries.",
+    "text1_buchenwaelder" : "Beech is the most important tree species in Central Europe and is characterised by its ability to adapt to different climatic and geographical conditions. However, human intervention has put great pressure on the ancient, primordial beech forests, of which only a few vestiges remain. With trees over 170 years old and a total area of more than 1000 hectares, the two forest reserves in the Lodano, Busai and Soladino valleys (TI) and Bettlachstock (SO) are a valuable genetic reserve, not only for beech trees but also for many associated animal and plant species that depend on these habitats. The two Swiss forest reserves, now on the UNESCO World Heritage List, are part of a transnational serial site consisting of 94 beech forests located in 18 countries.",
 
     "didyouknow_title" : "Did you know?",
 
@@ -94,6 +98,7 @@
     "text2_pfahlbauten" : "The first environmental damage occurred in the time of the pile dwellings over 5,000 years ago with the mass deforestation of woodland areas for farming.",
     "text2_gallen" : "333 explanations of typical abbey buildings are to be found on the famous Plan of St. Gall, which dates back to 825.",
     "text2_bern" : "Bern’s colourful street signs, in red, green, yellow, black and white, date back to the time when the city was occupied by Napoleon’s troops. They showed the drunk French soldiers the right way home through the alleys of the Old Town.",
+    "text2_buchenwaelder" : "",
 
     "text3_bellinzona" : "During the Swiss period of occupation, the castles were renamed Castello di Uri, Castello di Svitto and Castello di Unterwaldo.",
     "text3_alpen" : "If the Great Aletsch Glacier melted it could give a litre of water to each person living on the planet every day for the next 4,5 years",
@@ -107,6 +112,7 @@
     "text3_pfahlbauten" : "Along our lakeshores, Neolithic people contributed to the extraordinary global expansion of cultivated wheat, which now covers more than 2.25 million km2.",
     "text3_gallen" : "The Alcuin Bible, produced around the year 800 has 840 pages and weighs about 20 kg.",
     "text3_bern" : "Albert Einstein developed his famous theory of relativity in Bern.",
+    "text3_buchenwaelder" : "",
 
     "quiz_start_text" : "In the following quiz you can prove your knowledge about the UNESCO World Heritage of Switzerland. There are 5 questions with 4 possible answers each. However, only one answer is correct. Note: Each question has a timer of 30 seconds. When the timer runs out, the next question will be continued.",
     "quiz_start_button" : "Start the quiz",
