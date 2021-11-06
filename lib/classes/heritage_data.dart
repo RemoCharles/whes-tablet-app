@@ -261,7 +261,26 @@ class HeritageData extends Heritage {
           "assets/images/heritage/stgallen3.jpg",
           "assets/images/heritage/stgallen4.jpg",
           "assets/images/heritage/stgallen5.jpg",
-        ])
+        ]),
+    Heritage(
+        titleDetail: "title_buchenwaelder",
+        urlDetail: "assets/images/headers/buchenwaelder.jpg",
+        title1: "title1_buchenwaelder",
+        text1: "text1_buchenwaelder",
+        text2: "text2_buchenwaelder",
+        text3: "text3_buchenwaelder",
+        bottomIcon: 150,
+        rightIcon: 390,
+        urlIcon: "assets/images/icons/buchenwaelder.png",
+        titlePopUp: "title_buchenwaelder",
+        textPopUp: "since_buchenwaelder",
+        urlPopUp: "assets/images/headers/buchenwaelder.jpg",
+        urlQR: "assets/images/qr/buchenwaelder.png",
+        heritageGallery: <String>[
+          "assets/images/heritage/buchenwaelder1.jpg",
+          "assets/images/heritage/buchenwaelder2.jpg",
+          "assets/images/heritage/buchenwaelder3.jpg"
+        ]),
   ];
   static Heritage fetchAny() {
     return HeritageData.items[0];
