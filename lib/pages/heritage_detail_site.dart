@@ -4,6 +4,7 @@ import 'package:whes_tablet_app/classes/styles.dart';
 import 'package:whes_tablet_app/classes/language_constants.dart';
 import 'package:whes_tablet_app/pages/heritage_detail_gallery_site.dart';
 import 'package:whes_tablet_app/pages/heritage_detail_info_site.dart';
+import 'package:whes_tablet_app/pages/heritage_detail_video_site.dart';
 
 class HeritageDetail extends StatefulWidget {
   HeritageDetail({Key key, this.heritage}) : super(key: key);
@@ -22,6 +23,7 @@ class _HeritageDetailState extends State<HeritageDetail> {
   void initState() {
     _children.add(HeritageDetailInfo(widget.heritage));
     _children.add(HeritageDetailGallery(widget.heritage));
+    _children.add(HeritageDetailVideo(widget.heritage));
     super.initState();
   }
 
@@ -53,7 +55,14 @@ class _HeritageDetailState extends State<HeritageDetail> {
                 ),
                 // ignore: deprecated_member_use
                 title: new Text(getTranslated(context, "gallery_tab"),
-                    style: Styles.textTab))
+                    style: Styles.textTab)),
+            BottomNavigationBarItem(
+                icon: new Icon(Icons.movie),
+                // ignore: deprecated_member_use
+                title: new Text(
+                  "Video",
+                  style: Styles.textTab,
+                )),
           ]),
     );
   }
