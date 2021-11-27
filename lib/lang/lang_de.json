@@ -8,6 +8,11 @@
     "indexBackground" : "assets/images/karte_schweiz_de.png",
 
     "video_general" : "assets/videos/unesco_de.mp4",
+    "video_aletsch" : "assets/videos/heritage/de/aletsch.mp4",
+    "video_arena" : "assets/videos/heritage/de/arena.mp4",
+    "video_bahn" : "assets/videos/heritage/de/bahn.mp4",
+    "video_lavaux" : "assets/videos/heritage/de/lavaux.mp4",
+    "video_gallen" : "assets/videos/heritage/de/st_gallen.mp4",
 
     "UNESCO Welterbe": "UNESCO",
     "Quiz": "Quiz",
