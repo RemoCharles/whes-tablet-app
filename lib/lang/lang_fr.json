@@ -70,7 +70,7 @@
     "title1_pfahlbauten" : "Témoignages uniques de la préhistoire",
     "title1_gallen" : "1400 ans d’histoire culturelle",
     "title1_bern" : "Une promenade à travers les siècles",
-    "title1_buchenwaelder" : "Forêt complexe non perturbé",
+    "title1_buchenwaelder" : "La conquête d'un continent",
 
     "text1_bellinzona" : "Hier ligne de défense des Alpes, aujourd’hui Patrimoine mondial: les trois imposants châteaux de Bellinzone comptent parmi les plus beaux témoins de l’art des fortifications médiévales. Ils ont été édifiés par les ducs de Milan pour barrer l’accès vers le sud aux Confédérés suisses. Bellinzone occupait déjà à l’époque une position stratégique ente le nord et le sud. Au fil des siècles, les trois châteaux Castelgrande, Montebello et Sasso Corbaro ont été remaniés à plusieurs reprises et restaurés. Avec ses murailles, ses tours, ses remparts et ses portes, ce complexe de défense suscite toujours l’émerveillement des visiteurs.",
     "text1_alpen" : "Formé d’imposantes chaînes de montagnes, de vallées intactes et du plus grand glacier des Alpes. Ce site du patrimoine mondial est l'un des paysages alpins les plus spectaculaires au monde et représente le cœur des Alpes avec l'Eiger, le Mönch, la Jungfrau et le grand glacier d'Aletsch sur 824 km2. La région regroupe les habitats les plus divers, du glacier jusqu’à la steppe, et met en évidence de façon saisissante les conséquences du changement climatique. Ce paysage a joué un rôle important en Europe dans la littérature, les arts, l’alpinisme et le tourisme alpin. Rares sont les autres sites sur la planète à pouvoir offrir une telle diversité de contrastes et de richesses.",
@@ -100,7 +100,7 @@
     "text2_pfahlbauten" : "Les premières pollutions de l‘environnement remontent à l’époque des palafittes – il y a plus de 5000 ans – dues au vaste défrichement de zones boisées au profit de l’agriculture.",
     "text2_gallen" : "Le célèbre plan de l’abbaye de Saint-Gall, datant de 825, compte 333 annotations sur les bâtiments typiques.",
     "text2_bern" : "A Berne, les plaques de rue colorées (rouges, vertes, jaunes, noires, blanches) sont un héritage de l’occupation napoléonienne. Ces repères permettaient aux soldats français enivrés de retrouver leur chemin à travers les ruelles tortueuses de la vieille ville.",
-    "text2_buchenwaelder" : "",
+    "text2_buchenwaelder" : "Le hêtre a survécu aux glaciations du dernier million d'années et a réussi à coloniser des territoires caractérisés par une diversité climatique, géologique et morphologique marquée sur l'ensemble du continent européen.",
 
     "text3_bellinzona" : "Pendant la période d’occupation de la Suisse, les châteaux forts ont été rebaptisés Castello di Uri, Castello di Svitto et Castello di Unterwaldo.",
     "text3_alpen" : "La fonte du grand glacier d’Aletsch fournirait quotidiennement un litre d’eau à chaque habitant de la planète durant 4,5 ans.",
@@ -114,7 +114,7 @@
     "text3_pfahlbauten" : "Au bord de nos lacs, les populations du Néolithique ont contribué à l‘extraordinaire expansion mondiale du blé, qui couvre aujourd‘hui plus de 2.25 millions de km2.",
     "text3_gallen" : "La bible d’Alcuin datant des années 800 compte 840 pages et pèse une vingtaine de kilos.",
     "text3_bern" : "C‘est à Berne qu’Albert Einstein a élaboré sa célèbre théorie de la relativité.",
-    "text3_buchenwaelder" : "",
+    "text3_buchenwaelder" : "La hêtraie de la vallée de Lodano est un exemple exceptionnel de l'expansion des hêtres après la dernière glaciation dans la région des Alpes du Sud (il y a environ 6 000 ans).",
 
     "quiz_start_text" : "Dans le quiz suivant, vous pouvez prouver vos connaissances sur les sites du patrimoine mondial de l'UNESCO en Suisse. Il y a 5 questions avec 4 réponses possibles chacune. Cependant, une seule réponse est correcte. Attention : chaque question est dotée d'un minuteur de 30 secondes. Lorsque le délai expire, la question suivante se poursuit.",
     "quiz_start_button" : "Lancer le quiz",
