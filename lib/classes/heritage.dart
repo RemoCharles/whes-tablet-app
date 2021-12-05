@@ -13,6 +13,7 @@ class Heritage {
   final String urlPopUp;
   final String urlQR;
   final List<String> heritageGallery;
+  final String heritageVideo;
 
   Heritage(
       {this.titleDetail,
@@ -28,5 +29,6 @@ class Heritage {
       this.textPopUp,
       this.urlPopUp,
       this.urlQR,
-      this.heritageGallery});
+      this.heritageGallery,
+      this.heritageVideo});
 }
