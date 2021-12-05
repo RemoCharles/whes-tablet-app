@@ -76,6 +76,10 @@ flutter:
     - assets/questions/
     - assets/gifs/
     - assets/videos/
+    - assets/videos/heritage/de/
+    - assets/videos/heritage/en/
+    - assets/videos/heritage/fr/
+    - assets/videos/heritage/it/
 
 
 
