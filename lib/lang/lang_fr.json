@@ -7,6 +7,8 @@
 
     "indexBackground" : "assets/images/karte_schweiz_fr.png",
 
+    "video_placeholder" : "assets/images/video_placeholder.png",
+
     "video_general" : "assets/videos/unesco_fr.mp4",
     "video_aletsch" : "assets/videos/heritage/fr/aletsch.mp4",
     "video_arena" : "assets/videos/heritage/fr/arena.mp4",
