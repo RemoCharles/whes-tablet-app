@@ -267,14 +267,14 @@ class _IndexSiteState extends State<IndexSite> {
 
   List<Widget> _popUpButton(Heritage heritage) {
     return <Widget>[
-      FlatButton(
+      TextButton(
         child: new Text(
           getTranslated(context, "button_cancel"),
           style: Styles.textButtonFlat,
         ),
         onPressed: () => Navigator.of(context).pop(),
       ),
-      FlatButton(
+      TextButton(
           child: new Text(
             getTranslated(context, "button_more"),
             style: Styles.textButtonFlat,

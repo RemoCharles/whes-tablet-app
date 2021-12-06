@@ -214,7 +214,7 @@ class _QuizState extends State<Quiz> {
         textAlign: TextAlign.justify,
       ),
       actions: <Widget>[
-        FlatButton(
+        TextButton(
             onPressed: () {
               Navigator.of(context).pushAndRemoveUntil(
                   MaterialPageRoute(
@@ -224,7 +224,7 @@ class _QuizState extends State<Quiz> {
             },
             child: Text(getTranslated(context, "button_quiz_yes"),
                 style: Styles.textButtonFlat)),
-        FlatButton(
+        TextButton(
             onPressed: () {
               Navigator.of(context).pop();
             },

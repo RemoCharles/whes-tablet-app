@@ -7,6 +7,15 @@
 
     "indexBackground" : "assets/images/karte_schweiz_fr.png",
 
+    "video_placeholder" : "assets/images/video_placeholder.png",
+
+    "video_general" : "assets/videos/unesco_fr.mp4",
+    "video_aletsch" : "assets/videos/heritage/fr/aletsch.mp4",
+    "video_arena" : "assets/videos/heritage/fr/arena.mp4",
+    "video_bahn" : "assets/videos/heritage/fr/bahn.mp4",
+    "video_lavaux" : "assets/videos/heritage/fr/lavaux.mp4",
+    "video_gallen" : "assets/videos/heritage/fr/st_gallen.mp4",
+
     "UNESCO Welterbe": "UNESCO",
     "Quiz": "Quiz",
     "Video": "Video",
@@ -35,6 +44,7 @@
     "title_pfahlbauten" : "Sites palafittiques préhistoriques autour des Alpes",
     "title_gallen" : "Abbaye de Saint-Gall",
     "title_bern" : "Vieille ville de Berne",
+    "title_buchenwaelder" : "Forêts primaires et anciennes de hêtres",
 
     "since_bellinzona" : "Patrimoine culturel depuis 2000",
     "since_alpen" : "Patrimoine naturel depuis 2001",
@@ -48,6 +58,7 @@
     "since_pfahlbauten" : "Patrimoine culturel depuis 2011",
     "since_gallen" : "Patrimoine culturel depuis 1983",
     "since_bern" : "Patrimoine culturel depuis 1983",
+    "since_buchenwaelder" : "Patrimoine naturel depuis 2021",
 
     "button_more" : "PLUS",
     "button_cancel" : "RETOUR",
@@ -66,6 +77,7 @@
     "title1_pfahlbauten" : "Témoignages uniques de la préhistoire",
     "title1_gallen" : "1400 ans d’histoire culturelle",
     "title1_bern" : "Une promenade à travers les siècles",
+    "title1_buchenwaelder" : "La conquête d'un continent",
 
     "text1_bellinzona" : "Hier ligne de défense des Alpes, aujourd’hui Patrimoine mondial: les trois imposants châteaux de Bellinzone comptent parmi les plus beaux témoins de l’art des fortifications médiévales. Ils ont été édifiés par les ducs de Milan pour barrer l’accès vers le sud aux Confédérés suisses. Bellinzone occupait déjà à l’époque une position stratégique ente le nord et le sud. Au fil des siècles, les trois châteaux Castelgrande, Montebello et Sasso Corbaro ont été remaniés à plusieurs reprises et restaurés. Avec ses murailles, ses tours, ses remparts et ses portes, ce complexe de défense suscite toujours l’émerveillement des visiteurs.",
     "text1_alpen" : "Formé d’imposantes chaînes de montagnes, de vallées intactes et du plus grand glacier des Alpes. Ce site du patrimoine mondial est l'un des paysages alpins les plus spectaculaires au monde et représente le cœur des Alpes avec l'Eiger, le Mönch, la Jungfrau et le grand glacier d'Aletsch sur 824 km2. La région regroupe les habitats les plus divers, du glacier jusqu’à la steppe, et met en évidence de façon saisissante les conséquences du changement climatique. Ce paysage a joué un rôle important en Europe dans la littérature, les arts, l’alpinisme et le tourisme alpin. Rares sont les autres sites sur la planète à pouvoir offrir une telle diversité de contrastes et de richesses.",
@@ -79,6 +91,7 @@
     "text1_pfahlbauten" : "Les « sites palafittiques » sont des vestiges d’habitations préhistoriques dans des lacs et des marécages autour des Alpes. Ce bien en série regroupe 111 sites dans six pays (CH, D, F, I, SLO, A), dont 56 en Suisse. Les restes de matières organiques comme du bois, des textiles, des résidus de plantes et des os donnent des aperçus fascinants de la vie entre 5000 et 500 av. J.-C. Bon nombre de ces sites aujourd’hui sont enfouis sous l’eau, sous les rives ou dans les marécages et sont très difficiles d’accès. Cela rend leur exposition dans des musées, comme le Laténium près de Neuchâtel, encore plus importante, qui offre une présentation détaillée de la vie de nos ancêtres.",
     "text1_gallen" : "La première pierre de l’abbaye a été posée en 612 par le moine irlandais Gallus. Plus d’un siècle après, Saint Otmar redonne vie au couvent et le transforme en un important centre dédié à l’écriture et à l’enluminure. Aujourd’hui encore, l’esprit des moines bénédictins est bien perceptible dans cet impressionnant édifice historique. La bibliothèque de Saint-Gall – véritable «pharmacie de l’âme» – possède la plus belle salle suisse de style rococo. Outre un trésor composé de 170 000 livres, elle renferme l’une des plus importantes collections de manuscrits autochtones d’Europe du Moyen Âge. Parmi les éléments remarquables, il convient de mentionner également le plan de Saint-Gall, l’Evangelium Longum et l’Abrogans – le plus ancien livre encore existant en langue allemande",
     "text1_bern" : "La ville fondée en 1191 trône fièrement sur une presqu’île de l’Aar et témoigne aujourd’hui encore du formidable développement urbain de l’Europe au Moyen Âge. Elle illustre de manière exemplaire comment il est possible de conserver un centre ville historique intact tout en offrant une fonctionnalité moderne. La capitale fédérale fascine les visiteurs par l'alignement des maisons, la mosaïque des toits, les arcades, les caves, les tours et les fontaines dont les matériaux sont en grande partie d'origine. Tout vous invite à faire une promenade à travers les siècles.",
+    "text1_buchenwaelder" : "Principale espèce d’arbre de l’Europe centrale, le hêtre se distingue par son adaptabilité aux différentes conditions climatiques et géographiques. Toutefois, l’intervention humaine est responsable d’une forte pression sur les forêts de hêtres primaires et anciennes: il n’en reste que quelques vestiges. Avec des arbres âgés de plus de 170 ans et une superficie totale de plus de 1000 hectares, les deux réserves forestières des Valli di Lodano, Busai e Soladino (TI) ainsi que celle de la Bettlachstock (SO) constituent un précieux réservoir génétique non seulement pour les hêtres, mais aussi pour de nombreuses espèces animales et végétales associées et dépendantes de ces habitats. Ces réserves forestières suisses inscrites sur la Liste du Patrimoine mondial de l’UNESCO font partie d’un ensemble international: 94 hêtraies réparties dans 18 pays forment en effet un seul et même bien du Patrimoine mondial.",
 
     "didyouknow_title" : "Le savais-tu ?",
 
@@ -94,6 +107,7 @@
     "text2_pfahlbauten" : "Les premières pollutions de l‘environnement remontent à l’époque des palafittes – il y a plus de 5000 ans – dues au vaste défrichement de zones boisées au profit de l’agriculture.",
     "text2_gallen" : "Le célèbre plan de l’abbaye de Saint-Gall, datant de 825, compte 333 annotations sur les bâtiments typiques.",
     "text2_bern" : "A Berne, les plaques de rue colorées (rouges, vertes, jaunes, noires, blanches) sont un héritage de l’occupation napoléonienne. Ces repères permettaient aux soldats français enivrés de retrouver leur chemin à travers les ruelles tortueuses de la vieille ville.",
+    "text2_buchenwaelder" : "Le hêtre a survécu aux glaciations du dernier million d'années et a pu coloniser l'ensemble du continent européen.",
 
     "text3_bellinzona" : "Pendant la période d’occupation de la Suisse, les châteaux forts ont été rebaptisés Castello di Uri, Castello di Svitto et Castello di Unterwaldo.",
     "text3_alpen" : "La fonte du grand glacier d’Aletsch fournirait quotidiennement un litre d’eau à chaque habitant de la planète durant 4,5 ans.",
@@ -107,6 +121,7 @@
     "text3_pfahlbauten" : "Au bord de nos lacs, les populations du Néolithique ont contribué à l‘extraordinaire expansion mondiale du blé, qui couvre aujourd‘hui plus de 2.25 millions de km2.",
     "text3_gallen" : "La bible d’Alcuin datant des années 800 compte 840 pages et pèse une vingtaine de kilos.",
     "text3_bern" : "C‘est à Berne qu’Albert Einstein a élaboré sa célèbre théorie de la relativité.",
+    "text3_buchenwaelder" : "On estime que les forêts de hêtres abritent jusqu'à 10 000 espèces animales.",
 
     "quiz_start_text" : "Dans le quiz suivant, vous pouvez prouver vos connaissances sur les sites du patrimoine mondial de l'UNESCO en Suisse. Il y a 5 questions avec 4 réponses possibles chacune. Cependant, une seule réponse est correcte. Attention : chaque question est dotée d'un minuteur de 30 secondes. Lorsque le délai expire, la question suivante se poursuit.",
     "quiz_start_button" : "Lancer le quiz",

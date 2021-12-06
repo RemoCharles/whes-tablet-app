@@ -105,12 +105,7 @@ class _QuizStartState extends State<QuizStart> {
           child: SizedBox(
             width: 200.0,
             height: 50.0,
-            child: new RaisedButton(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                ),
-                color: Styles.buttonColor,
-                splashColor: Styles.tileHoverColor,
+            child: new ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).pushReplacement(
                       MaterialPageRoute(builder: (context) => GetJson()));

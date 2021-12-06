@@ -7,6 +7,15 @@
 
     "indexBackground" : "assets/images/karte_schweiz_it.png",
 
+    "video_placeholder" : "assets/images/video_placeholder.png",
+
+    "video_general" : "assets/videos/unesco_it.mp4",
+    "video_aletsch" : "assets/videos/heritage/it/aletsch.mp4",
+    "video_arena" : "assets/videos/heritage/it/arena.mp4",
+    "video_bahn" : "assets/videos/heritage/it/bahn.mp4",
+    "video_lavaux" : "assets/videos/heritage/it/lavaux.mp4",
+    "video_gallen" : "assets/videos/heritage/it/st_gallen.mp4",
+
     "UNESCO Welterbe": "UNESCO",
     "Quiz": "Quiz",
     "Video": "Video",
@@ -35,6 +44,7 @@
     "title_pfahlbauten" : "Siti palafitticoli preistorici dell’arco alpino",
     "title_gallen" : "Abbazia di San Gallo",
     "title_bern" : "Centro storico di Berna",
+    "title_buchenwaelder" : "Antiche faggete primordiali",
 
     "since_bellinzona" : "Patrimonio culturale dal 2000",
     "since_alpen" : "Patrimonio naturale dal 2001",
@@ -48,6 +58,7 @@
     "since_pfahlbauten" : "Patrimonio culturale dal 2011",
     "since_gallen" : "Patrimonio culturale dal 1983",
     "since_bern" : "Patrimonio culturale dal 1983",
+    "since_buchenwaelder" : "Patrimonio naturale dal 2021",
     
     "button_more" : "ALTRO",
     "button_cancel" : "TORNA",
@@ -66,6 +77,7 @@
     "title1_pfahlbauten" : "Testimonianze preistoriche straordinarie",
     "title1_gallen" : "1400 anni di cultura",
     "title1_bern" : "Una passeggiata attraverso i secoli",
+    "title1_buchenwaelder" : "Alla conquista di un continente",
 
     "text1_bellinzona" : "Ieri barriera per le Alpi, oggi Patrimonio mondiale: i tre imponenti castelli di Bellinzona sono testimoni dell’arte militare medievale. A realizzarli fu il Ducato di Milano, intenzionato a sbarrare la strada ai Confederati svizzeri verso sud. Già allora Bellinzona occupava una posizione strategica, a cavallo tra nord e sud. Nel corso dei secoli, le tre strutture difensive – Castelgrande, Montebello e Sasso Corbaro – sono state ricostruite e restaurate a più riprese. Con mura, torri, merli e portoni, il complesso difensivo non smette di stupire anche gli osservatori moderni.",
     "text1_alpen" : "Imponenti catene montuose, valli selvagge e l’area glaciale alpina più vasta e compatta delle Alpi. Questo Patrimonio mondiale appartiene ai paesaggi di alta montagna tra i più spettacolari al mondo, rappresentano il cuore delle Alpi con l'Eiger, il Mönch, la Jungfrau e il grande ghiacciaio dell'Aletsch su 824 km2. Questa regione unisce svariati habitat e ambienti naturali, dal ghiacciaio alle steppe, e testimonia gli effetti dei cambiamenti climatici in corso. Non a caso ha avuto un ruolo di primo piano nell’arte, nella letteratura, nell’alpinismo e nel turismo montano d’Europa. Pochi altri luoghi al mondo possono vantare una ricchezza simile in termini di contrasti e tesori naturali.",
@@ -79,6 +91,7 @@
     "text1_pfahlbauten" : "I “siti palafitticoli” sono resti d’insediamenti preistorici sparsi intorno ai laghi e alle paludi dell’arco alpino. Il bene seriale include 111 siti (in Svizzera, Germania, Francia, Italia, Slovenia, Austria), 56 dei quali in Svizzera. I materiali organici rinvenuti, come ad esempio legno, tessuti, resti vegetali e ossa, offrono scorci affascinanti sulla vita tra il 5000 e il 500 a.C. Molti siti sono difficilmente accessibili, sepolti sotto l’acqua, sulle rive dei laghi o in zone paludose. Ciò rende ancora più importante la loro esposizione nei musei, come al Laténium vicino a Neuchâtel, dove è possibile conoscere in dettaglio la vita dei nostri antenati.",
     "text1_gallen" : "La prima pietra dell'abbazia fu posta nel 612 dal monaco errante irlandese Gallo. Cento anni più tardi, l'abate Otmar ravvivò il monastero e lo trasformò in un centro per la scrittura e la miniatura. Ancora oggi, tra queste mura ricche di storia si può avvertire lo spirito dei monaci benedettini di un tempo. La biblioteca abbaziale, nota come “farmacia dell'anima”, ospita la più bella sala rococò della Svizzera. Oltre a 170.000 libri, vanta una delle collezioni di manoscritti medievali autoctoni più importanti d’Europa. Una menzione speciale meritano la pianta carolingia di San Gallo e i tomi “Evangelium longum” e “Abrogans”; quest’ultimo è il più antico libro in tedesco giunto fino a noi.",
     "text1_bern" : "La città, fondata nel 1191 su una penisola collinare che svetta sul fiume Aare, testimonia la grandiosa urbanistica del Medioevo europeo. Illustra in modo esemplare come sia possibile mantenere intatto un centro storico pur offrendo funzionalità moderne. La capitale federale affascina i visitatori per l’allineamento delle case, il mosaico di tetti, gli archi, le cantine, le torri e le fontane i cui materiali sono in gran parte originali. Tutto invita a una passeggiata attraverso i secoli.",
+    "text1_buchenwaelder" : "Il faggio è la principale specie arborea dell’Europa centrale e si caratterizza per la sua capacità di adattamento alle diverse condizioni climatiche e geografiche. Tuttavia, l’intervento dell’uomo esercita una forte pressione sulle antiche faggete primordiali di cui non restano che poche vestigia. Con alberi di oltre 170 anni d’età e una superficie complessiva superiore a 1000 ettari, le due riserve forestali delle Valli di Lodano, Busai e Soladino (TI) e di Bettlachstock (SO) costituiscono una preziosa riserva genetica, non solo per il faggio ma anche per molte specie animali e vegetali associate che dipendono da questi habitat. Le due riserve forestali svizzere, ora iscritte nella Lista del Patrimonio mondiale dell’UNESCO, fanno parte di un bene seriale transnazionale composto da 94 faggete ubicate in 18 Paesi.",
 
     "didyouknow_title" : "Tu lo sapevi?",
 
@@ -94,6 +107,7 @@
     "text2_pfahlbauten" : "Le prime contaminazioni ambientali risalgono all’epoca delle palafitte, oltre 5000 anni fa: erano causate dal disboscamento di ampie superfici boschive per far posto ai campi coltivati.",
     "text2_gallen" : "Sulla celebre Pianta del monastero di San Gallo, risalente all’825 circa, figurano 333 annotazioni sugli edifici del complesso architettonico.",
     "text2_bern" : "Le variopinte targhe stradali di Berna (rosse, verdi, gialle, nere, bianche) risalgono addirittura ai tempi dell’occupazione napoleonica e indicavano la strada di casa ai soldati francesi ubriachi nel reticolo di viuzze della città vecchia.",
+    "text2_buchenwaelder" : "Il faggio è sopravvissuto alle glaciazioni degli ultimi milioni di anni e ha potuto colonizzare tutto il continente europeo.",
 
     "text3_bellinzona" : "Durante il periodo di occupazione svizzero, le tre fortificazioni sono state ribattezzate Castello di Uri, Castello di Svitto e Castello di Unterwaldo.",
     "text3_alpen" : "Se si sciogliesse il grande ghiacciaio dell’Aletsch, per 4,5 anni si potrebbe dare un litro d’acqua al giorno a ogni singolo abitante della Terra.",
@@ -107,6 +121,7 @@
     "text3_pfahlbauten" : "Sulle rive dei nostril laghi le popolazioni del neolitico hanno contribuito alla straordinaria espansione mondiale del grano, che oggi ricopre una superficie di oltre 2,25 milioni di chilometri quadrati.",
     "text3_gallen" : "La Bibbia di Alcuino, risalente all’800, ha 840 pagine e pesa circa 20 kg.",
     "text3_bern" : "Albert Einstein ha formulato la sua famosa teoria della relatività a Berna.",
+    "text3_buchenwaelder" : "Si stima che le foreste di faggio ospitano fino a 10.000 specie animali.",
 
     "quiz_start_text" : "Nel seguente quiz potete dimostrare le vostre conoscenze sui siti del patrimonio mondiale dell'UNESCO in Svizzera. Ci sono 5 domande con 4 possibili risposte ciascuna. Tuttavia, solo una risposta è corretta. Attenzione: ogni domanda ha un timer di 30 secondi. Quando il timer scade, la domanda successiva continuerà.",
     "quiz_start_button" : "Inizia il quiz",

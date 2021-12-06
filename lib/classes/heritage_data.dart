@@ -3,25 +3,26 @@ import 'package:whes_tablet_app/classes/heritage.dart';
 class HeritageData extends Heritage {
   static final List<Heritage> items = [
     Heritage(
-        titleDetail: "title_bellinzona",
-        urlDetail: "assets/images/headers/Castelgrande2.jpg",
-        title1: "title1_bellinzona",
-        text1: "text1_bellinzona",
-        text2: "text2_bellinzona",
-        text3: "text3_bellinzona",
-        bottomIcon: 105,
-        rightIcon: 390,
-        urlIcon: "assets/images/icons/bellinzona.png",
-        titlePopUp: "title_bellinzona",
-        textPopUp: "since_bellinzona",
-        urlPopUp: "assets/images/headers/Castelgrande2.jpg",
-        urlQR: "assets/images/qr/bellinzona.png",
-        heritageGallery: <String>[
-          "assets/images/heritage/bellinzona1.jpg",
-          "assets/images/heritage/bellinzona2.jpg",
-          "assets/images/heritage/bellinzona3.jpg",
-          "assets/images/heritage/bellinzona4.jpg"
-        ]),
+      titleDetail: "title_bellinzona",
+      urlDetail: "assets/images/headers/Castelgrande2.jpg",
+      title1: "title1_bellinzona",
+      text1: "text1_bellinzona",
+      text2: "text2_bellinzona",
+      text3: "text3_bellinzona",
+      bottomIcon: 105,
+      rightIcon: 390,
+      urlIcon: "assets/images/icons/bellinzona.png",
+      titlePopUp: "title_bellinzona",
+      textPopUp: "since_bellinzona",
+      urlPopUp: "assets/images/headers/Castelgrande2.jpg",
+      urlQR: "assets/images/qr/bellinzona.png",
+      heritageGallery: <String>[
+        "assets/images/heritage/bellinzona1.jpg",
+        "assets/images/heritage/bellinzona2.jpg",
+        "assets/images/heritage/bellinzona3.jpg",
+        "assets/images/heritage/bellinzona4.jpg"
+      ],
+    ),
     Heritage(
         titleDetail: "title_bahn",
         urlDetail: "assets/images/headers/bahn.jpg",
@@ -44,7 +45,8 @@ class HeritageData extends Heritage {
           "assets/images/heritage/bahn5.jpg",
           "assets/images/heritage/bahn6.jpg",
           "assets/images/heritage/bahn7.jpg"
-        ]),
+        ],
+        heritageVideo: "video_bahn"),
     Heritage(
         titleDetail: "title_bern",
         urlDetail: "assets/images/headers/bern.jpg",
@@ -128,7 +130,8 @@ class HeritageData extends Heritage {
           "assets/images/heritage/alps6.jpg",
           "assets/images/heritage/alps7.jpg",
           "assets/images/heritage/alps8.jpg"
-        ]),
+        ],
+        heritageVideo: "video_aletsch"),
     Heritage(
         titleDetail: "title_lavaux",
         urlDetail: "assets/images/headers/lavaux.jpg",
@@ -148,7 +151,8 @@ class HeritageData extends Heritage {
           "assets/images/heritage/lavaux2.jpg",
           "assets/images/heritage/lavaux3.jpg",
           "assets/images/heritage/lavaux4.jpg"
-        ]),
+        ],
+        heritageVideo: "video_lavaux"),
     Heritage(
         titleDetail: "title_mustair",
         urlDetail: "assets/images/headers/mustair.jpg",
@@ -240,7 +244,8 @@ class HeritageData extends Heritage {
           "assets/images/heritage/sardona6.jpg",
           "assets/images/heritage/sardona7.jpg",
           "assets/images/heritage/sardona8.jpg",
-        ]),
+        ],
+        heritageVideo: "arena"),
     Heritage(
         titleDetail: "title_gallen",
         urlDetail: "assets/images/headers/st_gallen.jpg",
@@ -261,7 +266,27 @@ class HeritageData extends Heritage {
           "assets/images/heritage/stgallen3.jpg",
           "assets/images/heritage/stgallen4.jpg",
           "assets/images/heritage/stgallen5.jpg",
-        ])
+        ],
+        heritageVideo: "video_gallen"),
+    Heritage(
+        titleDetail: "title_buchenwaelder",
+        urlDetail: "assets/images/headers/buchenwaelder.jpg",
+        title1: "title1_buchenwaelder",
+        text1: "text1_buchenwaelder",
+        text2: "text2_buchenwaelder",
+        text3: "text3_buchenwaelder",
+        bottomIcon: 105,
+        rightIcon: 505,
+        urlIcon: "assets/images/icons/buchenwaelder.png",
+        titlePopUp: "title_buchenwaelder",
+        textPopUp: "since_buchenwaelder",
+        urlPopUp: "assets/images/headers/buchenwaelder.jpg",
+        urlQR: "assets/images/qr/buchenwaelder.png",
+        heritageGallery: <String>[
+          "assets/images/heritage/buchenwaelder1.jpg",
+          "assets/images/heritage/buchenwaelder2.jpg",
+          "assets/images/heritage/buchenwaelder3.jpg"
+        ]),
   ];
   static Heritage fetchAny() {
     return HeritageData.items[0];
