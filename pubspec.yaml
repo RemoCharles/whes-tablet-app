@@ -75,7 +75,7 @@ flutter:
     - assets/images/qr/
     - assets/questions/
     - assets/gifs/
-    - assets/videos/
+    - assets/videos/general/
     - assets/videos/heritage/de/
     - assets/videos/heritage/en/
     - assets/videos/heritage/fr/
