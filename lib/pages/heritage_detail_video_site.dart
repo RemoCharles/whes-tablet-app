@@ -17,7 +17,8 @@ class HeritageDetailVideo extends StatelessWidget {
               _videoController(getTranslated(context, heritage.heritageVideo)));
     }
     return Scaffold(
-        body: _placeholderWidget(getTranslated(context, "video_placeholder")));
+        body: _videoControllerPlaceholder(
+            getTranslated(context, "video_placeholder")));
   }
 
   Widget _videoController(String videoTitle) {
@@ -33,20 +34,16 @@ class HeritageDetailVideo extends StatelessWidget {
         ));
   }
 
-  Widget _placeholderWidget(String url) {
+  Widget _videoControllerPlaceholder(String videoTitle) {
     return Container(
         padding: EdgeInsets.all(15.0),
         alignment: Alignment.center,
-        child: _placeholderImage(url));
-  }
-
-  Widget _placeholderImage(String url) {
-    return Center(
-      child: SizedBox(
-        width: 200.0,
-        height: 200.0,
-        child: Image.asset(url),
-      ),
-    );
+        child: Center(
+          child: VideoItems(
+            videoPlayerController: VideoPlayerController.asset(videoTitle),
+            looping: false,
+            autoplay: false,
+          ),
+        ));
   }
 }
