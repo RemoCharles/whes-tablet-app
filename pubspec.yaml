@@ -23,8 +23,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  video_player: ^2.2.6
   chewie: ^1.2.2
+  video_player: ^2.2.6
   flutter_localizations:
     sdk: flutter
   shared_preferences: ^0.5.6+2  
