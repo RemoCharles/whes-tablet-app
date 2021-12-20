@@ -245,7 +245,7 @@ class HeritageData extends Heritage {
           "assets/images/heritage/sardona7.jpg",
           "assets/images/heritage/sardona8.jpg",
         ],
-        heritageVideo: "arena"),
+        heritageVideo: "video_arena"),
     Heritage(
         titleDetail: "title_gallen",
         urlDetail: "assets/images/headers/st_gallen.jpg",
