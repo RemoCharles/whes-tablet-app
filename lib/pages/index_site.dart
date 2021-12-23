@@ -32,10 +32,10 @@ class _IndexSiteState extends State<IndexSite> {
   @override
   void initState() {
     super.initState();
-    indexBackgroundDe = Image.asset("assets/images/karte_schweiz_de.png");
-    indexBackgroundFr = Image.asset("assets/images/karte_schweiz_fr.png");
-    indexBackgroundIt = Image.asset("assets/images/karte_schweiz_it.png");
-    indexBackgroundEn = Image.asset("assets/images/karte_schweiz_en.png");
+    indexBackgroundDe = Image.asset("assets/images/maps/karte_schweiz_de.png");
+    indexBackgroundFr = Image.asset("assets/images/maps/karte_schweiz_fr.png");
+    indexBackgroundIt = Image.asset("assets/images/maps/karte_schweiz_it.png");
+    indexBackgroundEn = Image.asset("assets/images/maps/karte_schweiz_en.png");
     drawerHeader = Image.asset("assets/images/WHES_Website_Logo.png");
   }
 
