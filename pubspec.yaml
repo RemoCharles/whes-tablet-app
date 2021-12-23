@@ -66,6 +66,7 @@ flutter:
     - lib/lang/lang_it.json
     - lib/lang/lang_en.json
     - assets/images/
+    - assets/images/maps/
     - assets/images/icons/
     - assets/images/headers/
     - assets/images/quiz/
