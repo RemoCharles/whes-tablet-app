@@ -36,7 +36,7 @@ class AboutUs extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   _sectionPictureLogo("assets/images/WHES_Website_Logo.png"),
-                  _sectionPicture("assets/images/qr/whes.png")
+                  _sectionPicture("assets/images/qr/general/whes_de.png")
                 ],
               ))
         ],
